@@ -13,7 +13,7 @@ section {
   flex-wrap: wrap;
 }
 
-.about-heading {
+.about-first-heading {
   display: flex;
   width: 70vw;
   font-size: 4rem;
@@ -23,11 +23,33 @@ section {
   gap: 2rem;
 }
 
-.about-content {
+.about-first-content {
   align-self: flex-start;
   font-size: 1rem;
 }
 
-.about-logo {
+.about-first-logo {
   width: 40vw;
+}
+
+.second {
+  height: 95vh;
+  justify-content: start;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about-second-heading {
+  width: 70vw;
+  font-size: 4rem;
+}
+
+.about-second-content {
+  display: flex;
+  gap: 4rem;
+  font-size: 1.1rem;
+}
+
+.about-second-logo {
+  width: 20%;
 }
