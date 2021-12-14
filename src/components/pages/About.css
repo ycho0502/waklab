@@ -1,0 +1,33 @@
+.about {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  flex-wrap: wrap;
+}
+
+.about-heading {
+  display: flex;
+  width: 70vw;
+  font-size: 4rem;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about-content {
+  align-self: flex-start;
+  font-size: 1rem;
+}
+
+.about-logo {
+  width: 40vw;
+}
