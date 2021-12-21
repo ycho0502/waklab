@@ -1,21 +1,29 @@
 {
   "files": {
-    "main.css": "/waklab/static/css/main.a54486d8.chunk.css",
-    "main.js": "/waklab/static/js/main.9001e988.chunk.js",
-    "main.js.map": "/waklab/static/js/main.9001e988.chunk.js.map",
+    "main.css": "/waklab/static/css/main.c3ca933a.chunk.css",
+    "main.js": "/waklab/static/js/main.4c1014f5.chunk.js",
+    "main.js.map": "/waklab/static/js/main.4c1014f5.chunk.js.map",
     "runtime-main.js": "/waklab/static/js/runtime-main.3191d22f.js",
     "runtime-main.js.map": "/waklab/static/js/runtime-main.3191d22f.js.map",
-    "static/js/2.af4ee5f1.chunk.js": "/waklab/static/js/2.af4ee5f1.chunk.js",
-    "static/js/2.af4ee5f1.chunk.js.map": "/waklab/static/js/2.af4ee5f1.chunk.js.map",
+    "static/js/2.24a4dc10.chunk.js": "/waklab/static/js/2.24a4dc10.chunk.js",
+    "static/js/2.24a4dc10.chunk.js.map": "/waklab/static/js/2.24a4dc10.chunk.js.map",
     "index.html": "/waklab/index.html",
-    "static/css/main.a54486d8.chunk.css.map": "/waklab/static/css/main.a54486d8.chunk.css.map",
-    "static/js/2.af4ee5f1.chunk.js.LICENSE.txt": "/waklab/static/js/2.af4ee5f1.chunk.js.LICENSE.txt",
+    "static/css/main.c3ca933a.chunk.css.map": "/waklab/static/css/main.c3ca933a.chunk.css.map",
+    "static/js/2.24a4dc10.chunk.js.LICENSE.txt": "/waklab/static/js/2.24a4dc10.chunk.js.LICENSE.txt",
+    "static/media/20211124212227.png": "/waklab/static/media/20211124212227.2d26428b.png",
+    "static/media/20211124212249.png": "/waklab/static/media/20211124212249.398559d6.png",
+    "static/media/20211124212319.png": "/waklab/static/media/20211124212319.4956b7f0.png",
+    "static/media/20211124212339.png": "/waklab/static/media/20211124212339.67e1b0b1.png",
+    "static/media/20211124212350.png": "/waklab/static/media/20211124212350.4453ad16.png",
+    "static/media/20211124212401.png": "/waklab/static/media/20211124212401.c1f13225.png",
+    "static/media/20211124212410.png": "/waklab/static/media/20211124212410.60c2d293.png",
+    "static/media/20211124212457.png": "/waklab/static/media/20211124212457.b9a5dbee.png",
     "static/media/WAK.bbdabd2e.png": "/waklab/static/media/WAK.bbdabd2e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3191d22f.js",
-    "static/js/2.af4ee5f1.chunk.js",
-    "static/css/main.a54486d8.chunk.css",
-    "static/js/main.9001e988.chunk.js"
+    "static/js/2.24a4dc10.chunk.js",
+    "static/css/main.c3ca933a.chunk.css",
+    "static/js/main.4c1014f5.chunk.js"
   ]
 }
