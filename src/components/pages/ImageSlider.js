@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { SliderData } from "./SliderData";
+import ProductCard from "./ProductCard";
 import "./ImageSlider.css";
 
 const ImageSlider = ({ slides }) => {
@@ -28,7 +29,8 @@ const ImageSlider = ({ slides }) => {
             key={index}
           >
             {index === current && (
-              <img src={slide.image} className="image"></img>
+              // <img src={slide.image} className="image"></img>
+              <ProductCard img={slide.image} />
             )}
           </div>
         );
