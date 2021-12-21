@@ -47,6 +47,7 @@ function Navbar() {
             <Link to="/" className="nav-links" onClick={closeMobileMenu}>
               <i class="fas fa-home"></i> Home
             </Link>
+            <div className="menu_animation"></div>
           </li>
 
           {/* ABOUT */}
@@ -54,6 +55,7 @@ function Navbar() {
             <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
               <i class="fas fa-info-circle"></i> About
             </Link>
+            <div className="menu_animation"></div>
           </li>
 
           {/* PRODUCTS */}
@@ -78,6 +80,7 @@ function Navbar() {
             <Link to="/team" className="nav-links" onClick={closeMobileMenu}>
               <i class="fas fa-users"></i> Team
             </Link>
+            <div className="menu_animation"></div>
           </li>
         </ul>
       </nav>
