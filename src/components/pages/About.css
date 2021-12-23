@@ -1,7 +1,5 @@
 .about {
-  height: 100vh;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 section {

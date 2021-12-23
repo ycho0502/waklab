@@ -7,6 +7,7 @@ import logo from "../assets/WAK.png";
 function Navbar() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -27,9 +28,19 @@ function Navbar() {
     }
   };
 
+  const changeBackground = () => {
+    if (window.scrollY > 0) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
+
   return (
     <>
-      <nav className="navbar">
+      <nav className={navbar ? "navbar active" : "navbar"}>
         {/* LOGO */}
         <Link to="/" className="navbar-logo">
           <img className="logo" src={logo} />

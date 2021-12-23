@@ -1,9 +1,25 @@
 import React from "react";
+import "./Home.css";
 
+// testing commit
 function Home() {
   return (
     <div className="home">
-      <h1>Home</h1>
+      <section className="showcase">
+        <video
+          src="https://cdn.videvo.net/videvo_files/video/free/2019-03/large_watermarked/181015_Extra_DanangDrone_004_preview.mp4"
+          muted
+          loop
+          autoPlay
+          controls
+        ></video>
+        <div className="overlay"></div>
+        <div className="vidText">
+          <h3>WE ARE</h3>
+
+          <h2>WAKLAB</h2>
+        </div>
+      </section>
     </div>
   );
 }
