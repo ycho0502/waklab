@@ -56,7 +56,7 @@ function Navbar() {
           {/* HOME */}
           <li className="nav-item">
             <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-              <i class="fas fa-home"></i> Home
+              Home
             </Link>
             <div className="menu_animation"></div>
           </li>
@@ -64,7 +64,7 @@ function Navbar() {
           {/* ABOUT */}
           <li className="nav-item">
             <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
-              <i class="fas fa-info-circle"></i> About
+              About
             </Link>
             <div className="menu_animation"></div>
           </li>
@@ -80,8 +80,7 @@ function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              <i class="fas fa-store"></i> Products{" "}
-              <i className="fas fa-caret-down" />
+              Products <i className="fas fa-caret-down" />
             </Link>
             {dropdown && <Dropdown />}
           </li>
@@ -89,7 +88,7 @@ function Navbar() {
           {/* TEAM */}
           <li className="nav-item">
             <Link to="/team" className="nav-links" onClick={closeMobileMenu}>
-              <i class="fas fa-users"></i> Team
+              Team
             </Link>
             <div className="menu_animation"></div>
           </li>
