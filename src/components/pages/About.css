@@ -2,7 +2,7 @@
   /* overflow-y: scroll; */
 }
 
-section {
+.about section {
   height: 100vh;
   display: flex;
   justify-content: center;
