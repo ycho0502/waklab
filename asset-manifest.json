@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/waklab/static/css/main.f9b009a8.chunk.css",
-    "main.js": "/waklab/static/js/main.9bde27b5.chunk.js",
-    "main.js.map": "/waklab/static/js/main.9bde27b5.chunk.js.map",
+    "main.js": "/waklab/static/js/main.d6a7f021.chunk.js",
+    "main.js.map": "/waklab/static/js/main.d6a7f021.chunk.js.map",
     "runtime-main.js": "/waklab/static/js/runtime-main.3191d22f.js",
     "runtime-main.js.map": "/waklab/static/js/runtime-main.3191d22f.js.map",
     "static/js/2.24a4dc10.chunk.js": "/waklab/static/js/2.24a4dc10.chunk.js",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.3191d22f.js",
     "static/js/2.24a4dc10.chunk.js",
     "static/css/main.f9b009a8.chunk.css",
-    "static/js/main.9bde27b5.chunk.js"
+    "static/js/main.d6a7f021.chunk.js"
   ]
 }
