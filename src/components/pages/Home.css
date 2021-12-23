@@ -84,3 +84,47 @@
   font-size: 1.2vw;
   font-weight: 800;
 }
+
+.ceoIntro {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+  padding: 0px 200px 0px 200px;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.sectionTitle {
+  display: flex;
+  font-size: 2.5vw;
+  font-weight: 800;
+  justify-content: center;
+}
+
+.contentContainer {
+  display: flex;
+  margin-top: 6rem;
+}
+
+.sectionContent {
+  flex: 1 1 0;
+  width: 0;
+}
+
+.sectionContent p {
+  font-size: 0.9vw;
+  font-weight: 800;
+  padding-left: 10rem;
+}
+
+.contentImg {
+  display: flex;
+  flex: 1 1 0;
+  width: 0;
+  justify-content: center;
+}
