@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/waklab/static/css/main.903f37ba.chunk.css",
-    "main.js": "/waklab/static/js/main.c84e4b7f.chunk.js",
-    "main.js.map": "/waklab/static/js/main.c84e4b7f.chunk.js.map",
+    "main.css": "/waklab/static/css/main.f9b009a8.chunk.css",
+    "main.js": "/waklab/static/js/main.9bde27b5.chunk.js",
+    "main.js.map": "/waklab/static/js/main.9bde27b5.chunk.js.map",
     "runtime-main.js": "/waklab/static/js/runtime-main.3191d22f.js",
     "runtime-main.js.map": "/waklab/static/js/runtime-main.3191d22f.js.map",
     "static/js/2.24a4dc10.chunk.js": "/waklab/static/js/2.24a4dc10.chunk.js",
     "static/js/2.24a4dc10.chunk.js.map": "/waklab/static/js/2.24a4dc10.chunk.js.map",
     "index.html": "/waklab/index.html",
-    "static/css/main.903f37ba.chunk.css.map": "/waklab/static/css/main.903f37ba.chunk.css.map",
+    "static/css/main.f9b009a8.chunk.css.map": "/waklab/static/css/main.f9b009a8.chunk.css.map",
     "static/js/2.24a4dc10.chunk.js.LICENSE.txt": "/waklab/static/js/2.24a4dc10.chunk.js.LICENSE.txt",
     "static/media/20211124212227.png": "/waklab/static/media/20211124212227.2d26428b.png",
     "static/media/20211124212249.png": "/waklab/static/media/20211124212249.398559d6.png",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.3191d22f.js",
     "static/js/2.24a4dc10.chunk.js",
-    "static/css/main.903f37ba.chunk.css",
-    "static/js/main.c84e4b7f.chunk.js"
+    "static/css/main.f9b009a8.chunk.css",
+    "static/js/main.9bde27b5.chunk.js"
   ]
 }
