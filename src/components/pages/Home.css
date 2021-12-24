@@ -75,14 +75,15 @@
 }
 
 .intro h1 {
-  font-size: 2.5vw;
+  font-family: "dolce_vita_lightregular";
+  font-size: 2.8vw;
   font-weight: 0;
   line-height: 2em;
 }
 
 .intro p {
   font-size: 1.2vw;
-  font-weight: 800;
+  font-weight: 400;
 }
 
 .ceoIntro {
@@ -102,7 +103,7 @@
 .sectionTitle {
   display: flex;
   font-size: 2.5vw;
-  font-weight: 800;
+  font-weight: 700;
   justify-content: center;
 }
 
@@ -118,7 +119,7 @@
 
 .sectionContent p {
   font-size: 0.9vw;
-  font-weight: 800;
+  font-weight: 500;
   padding-left: 10rem;
 }
 

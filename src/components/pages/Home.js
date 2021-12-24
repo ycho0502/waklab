@@ -17,11 +17,11 @@ function Home() {
           loop
           autoPlay
         ></video>
-        <div className="overlay"></div>
         <div className="vidText">
           <h3>WE ARE</h3>
           <h2>WAKLAB</h2>
         </div>
+        <div className="overlay"></div>
       </section>
       <section className="intro">
         <img className="bgText" src={bgText} />
@@ -95,6 +95,10 @@ function Home() {
           </div>
         </div>
       </section>
+      <div className="divider">
+        <img src={charterBar} />
+      </div>
+      <section className="logoShowcase"></section>
     </div>
   );
 }

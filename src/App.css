@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "dolce_vita_heavybold";
+  src: url("./assets/fonts/dolce_vita_heavy_bold-webfont.woff2") format("woff2"),
+    url("./assets/fonts/dolce_vita_heavy_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "dolce_vita_lightregular";
+  src: url("./assets/fonts/dolce_vita_light-webfont.woff2") format("woff2"),
+    url("./assets/fonts/dolce_vita_light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "dolce_vitaregular";
+  src: url("./assets/fonts/dolce_vita-webfont.woff2") format("woff2"),
+    url("./assets/fonts/dolce_vita-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
