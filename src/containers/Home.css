@@ -1,0 +1,131 @@
+.showcase {
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding: 0px 200px 0px 200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #778b6b;
+  mix-blend-mode: overlay;
+}
+
+.vidText {
+  position: relative;
+  color: white;
+  z-index: 10;
+}
+
+.vidText h2 {
+  font-size: 5em;
+  font-weight: 800;
+}
+
+.vidText h3 {
+  font-size: 3em;
+  line-height: 1em;
+}
+
+.intro {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+  padding: 0px 200px 0px 200px;
+}
+
+.intro .bgText {
+  position: relative;
+  width: 55%;
+  z-index: 0;
+  margin-bottom: 2rem;
+}
+
+.intro .calendarPic {
+  position: absolute;
+  width: 60%;
+  top: -12%;
+  right: -10%;
+  z-index: 1;
+}
+
+.intro .waklogo {
+  position: relative;
+  width: 23%;
+  margin-bottom: 2rem;
+}
+
+.intro h1 {
+  font-family: "dolce_vita_lightregular";
+  font-size: 2.8vw;
+  font-weight: 0;
+  line-height: 2em;
+}
+
+.intro p {
+  font-size: 1.2vw;
+  font-weight: 400;
+}
+
+.ceoIntro {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+  padding: 0px 200px 0px 200px;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.sectionTitle {
+  display: flex;
+  font-size: 2.5vw;
+  font-weight: 700;
+  justify-content: center;
+}
+
+.contentContainer {
+  display: flex;
+  margin-top: 6rem;
+}
+
+.sectionContent {
+  flex: 1 1 0;
+  width: 0;
+}
+
+.sectionContent p {
+  font-size: 0.9vw;
+  font-weight: 500;
+  padding-left: 10rem;
+}
+
+.contentImg {
+  display: flex;
+  flex: 1 1 0;
+  width: 0;
+  justify-content: center;
+}

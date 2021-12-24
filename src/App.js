@@ -7,13 +7,13 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Home from "./components/pages/Home";
-import About from "./components/pages/About";
-import Products from "./components/pages/Products";
-import Team from "./components/pages/Team";
-import Calender from "./components/pages/Calender";
-import Clothing from "./components/pages/Clothing";
-import Isedol from "./components/pages/Isedol";
+import Home from "./containers/Home";
+import About from "./containers/About";
+import Products from "./containers/Products";
+import Team from "./containers/Team";
+import Calender from "./containers/Calender";
+import Clothing from "./containers/Clothing";
+import Isedol from "./containers/Isedol";
 
 function App() {
   return (

@@ -7,6 +7,7 @@ import logo from "../assets/WAK.png";
 function Navbar() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -27,9 +28,19 @@ function Navbar() {
     }
   };
 
+  const changeBackground = () => {
+    if (window.scrollY > 0) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
+
   return (
     <>
-      <nav className="navbar">
+      <nav className={navbar ? "navbar active" : "navbar"}>
         {/* LOGO */}
         <Link to="/" className="navbar-logo">
           <img className="logo" src={logo} />
@@ -45,15 +56,17 @@ function Navbar() {
           {/* HOME */}
           <li className="nav-item">
             <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-              <i class="fas fa-home"></i> Home
+              Home
             </Link>
+            <div className="menu_animation"></div>
           </li>
 
           {/* ABOUT */}
           <li className="nav-item">
             <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
-              <i class="fas fa-info-circle"></i> About
+              About
             </Link>
+            <div className="menu_animation"></div>
           </li>
 
           {/* PRODUCTS */}
@@ -67,8 +80,7 @@ function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              <i class="fas fa-store"></i> Products{" "}
-              <i className="fas fa-caret-down" />
+              Products <i className="fas fa-caret-down" />
             </Link>
             {dropdown && <Dropdown />}
           </li>
@@ -76,8 +88,9 @@ function Navbar() {
           {/* TEAM */}
           <li className="nav-item">
             <Link to="/team" className="nav-links" onClick={closeMobileMenu}>
-              <i class="fas fa-users"></i> Team
+              Team
             </Link>
+            <div className="menu_animation"></div>
           </li>
         </ul>
       </nav>
