@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/waklab/static/css/main.ff9fedfb.chunk.css",
-    "main.js": "/waklab/static/js/main.03cd1169.chunk.js",
-    "main.js.map": "/waklab/static/js/main.03cd1169.chunk.js.map",
+    "main.css": "/waklab/static/css/main.d6c427e7.chunk.css",
+    "main.js": "/waklab/static/js/main.12d8c5b9.chunk.js",
+    "main.js.map": "/waklab/static/js/main.12d8c5b9.chunk.js.map",
     "runtime-main.js": "/waklab/static/js/runtime-main.3191d22f.js",
     "runtime-main.js.map": "/waklab/static/js/runtime-main.3191d22f.js.map",
     "static/js/2.24a4dc10.chunk.js": "/waklab/static/js/2.24a4dc10.chunk.js",
     "static/js/2.24a4dc10.chunk.js.map": "/waklab/static/js/2.24a4dc10.chunk.js.map",
     "index.html": "/waklab/index.html",
-    "static/css/main.ff9fedfb.chunk.css.map": "/waklab/static/css/main.ff9fedfb.chunk.css.map",
+    "static/css/main.d6c427e7.chunk.css.map": "/waklab/static/css/main.d6c427e7.chunk.css.map",
     "static/js/2.24a4dc10.chunk.js.LICENSE.txt": "/waklab/static/js/2.24a4dc10.chunk.js.LICENSE.txt",
     "static/media/2019_calendar.7946f6de.png": "/waklab/static/media/2019_calendar.7946f6de.png",
     "static/media/20211124212227.png": "/waklab/static/media/20211124212227.2d26428b.png",
@@ -21,12 +21,13 @@
     "static/media/20211124212457.png": "/waklab/static/media/20211124212457.b9a5dbee.png",
     "static/media/WAK.bbdabd2e.png": "/waklab/static/media/WAK.bbdabd2e.png",
     "static/media/back.bbfb7417.png": "/waklab/static/media/back.bbfb7417.png",
+    "static/media/App.css": "/waklab/static/media/dolce_vita_light-webfont.6489a8e1.woff",
     "static/media/helloj.3dd49bad.png": "/waklab/static/media/helloj.3dd49bad.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3191d22f.js",
     "static/js/2.24a4dc10.chunk.js",
-    "static/css/main.ff9fedfb.chunk.css",
-    "static/js/main.03cd1169.chunk.js"
+    "static/css/main.d6c427e7.chunk.css",
+    "static/js/main.12d8c5b9.chunk.js"
   ]
 }
