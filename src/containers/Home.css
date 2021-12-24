@@ -129,3 +129,18 @@
   width: 0;
   justify-content: center;
 }
+
+.logoShowcase {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+  padding: 0px 200px 0px 200px;
+}
+
+.sectionLogoTitle {
+  font-family: "dolce_vita_lightregular";
+  display: flex;
+  font-size: 3.5vw;
+  justify-content: center;
+}

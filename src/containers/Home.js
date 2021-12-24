@@ -5,10 +5,12 @@ import logo from "../assets/WAK.png";
 import calendarPic from "../assets/2019_calendar.png";
 import charterBar from "../assets/chapter_bar.png";
 import bossJ from "../assets/helloj.png";
+import ImageSlider from "../components/ImageSlider";
+import { SliderData } from "../components/data/SliderData";
 
 function Home() {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <section className="showcase">
         <video
           src="https://cdn.videvo.net/videvo_files/video/free/2019-03/large_watermarked/181015_Extra_DanangDrone_004_preview.mp4"
@@ -23,7 +25,7 @@ function Home() {
         </div>
         <div className="overlay"></div>
       </section>
-      <section className="intro">
+      <section className="intro" id="about">
         <img className="bgText" src={bgText} />
         <img className="calendarPic" src={calendarPic} />
         <img className="waklogo" src={logo}></img>
@@ -98,7 +100,10 @@ function Home() {
       <div className="divider">
         <img src={charterBar} />
       </div>
-      <section className="logoShowcase"></section>
+      <section className="logoShowcase">
+        <div className="sectionLogoTitle">COMPANY LOGO</div>
+        <ImageSlider slides={SliderData} />
+      </section>
     </div>
   );
 }

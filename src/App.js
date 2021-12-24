@@ -14,10 +14,12 @@ import Team from "./containers/Team";
 import Calender from "./containers/Calender";
 import Clothing from "./containers/Clothing";
 import Isedol from "./containers/Isedol";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/about" element={<About />} />

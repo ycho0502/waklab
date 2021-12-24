@@ -54,12 +54,14 @@
 }
 
 .nav-links {
+  font-family: "dolce_vita_heavybold";
   color: rgb(0, 0, 0);
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
 
 .navbar.active .nav-links {
+  font-family: "dolce_vita_heavybold";
   color: white;
 }
 
