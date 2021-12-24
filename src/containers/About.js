@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import logo from "../../assets/WAK.png";
+import logo from "../assets/WAK.png";
 function About() {
   return (
     <div className="about">

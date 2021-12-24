@@ -1,10 +1,10 @@
 import React from "react";
 import "./Home.css";
-import bgText from "../../assets/back.png";
-import logo from "../../assets/WAK.png";
-import calendarPic from "../../assets/2019_calendar.png";
-import charterBar from "../../assets/chapter_bar.png";
-import bossJ from "../../assets/helloj.png";
+import bgText from "../assets/back.png";
+import logo from "../assets/WAK.png";
+import calendarPic from "../assets/2019_calendar.png";
+import charterBar from "../assets/chapter_bar.png";
+import bossJ from "../assets/helloj.png";
 
 function Home() {
   return (

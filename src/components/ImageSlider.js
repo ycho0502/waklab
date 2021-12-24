@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SliderData } from "./SliderData";
+import { SliderData } from "./data/SliderData";
 import ProductCard from "./ProductCard";
 import "./ImageSlider.css";
 
