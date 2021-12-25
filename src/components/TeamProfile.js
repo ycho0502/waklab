@@ -5,7 +5,8 @@ import {
   Designer,
   Model,
   Programmer,
-  Narrator,
+  Media,
+  Special,
 } from "./data/TeamData";
 
 function TeamProfile() {
@@ -14,6 +15,7 @@ function TeamProfile() {
   const [click3, setClick3] = useState(false);
   const [click4, setClick4] = useState(false);
   const [click5, setClick5] = useState(false);
+  const [click6, setClick6] = useState(false);
 
   const handleClick1 = () => {
     setClick1(!click1);
@@ -21,6 +23,7 @@ function TeamProfile() {
     setClick3(false);
     setClick4(false);
     setClick5(false);
+    setClick6(false);
   };
 
   const handleClick2 = () => {
@@ -29,6 +32,7 @@ function TeamProfile() {
     setClick3(false);
     setClick4(false);
     setClick5(false);
+    setClick6(false);
   };
 
   const handleClick3 = () => {
@@ -37,6 +41,7 @@ function TeamProfile() {
     setClick2(false);
     setClick4(false);
     setClick5(false);
+    setClick6(false);
   };
 
   const handleClick4 = () => {
@@ -45,6 +50,7 @@ function TeamProfile() {
     setClick2(false);
     setClick3(false);
     setClick5(false);
+    setClick6(false);
   };
 
   const handleClick5 = () => {
@@ -53,7 +59,18 @@ function TeamProfile() {
     setClick2(false);
     setClick3(false);
     setClick4(false);
+    setClick6(false);
   };
+
+  const handleClick6 = () => {
+    setClick6(!click6);
+    setClick1(false);
+    setClick2(false);
+    setClick3(false);
+    setClick4(false);
+    setClick5(false);
+  };
+
   return (
     <div className="teamProfile">
       <ul className="pagination">
@@ -70,7 +87,10 @@ function TeamProfile() {
           <a>프로그래머</a>
         </li>
         <li className={click5 ? "active" : null} onClick={handleClick5}>
-          <a>나레이터</a>
+          <a>미디어</a>
+        </li>
+        <li className={click6 ? "active" : null} onClick={handleClick6}>
+          <a style={{ fontFamily: "dolce_vita_heavybold" }}>Special Thanks</a>
         </li>
       </ul>
       <div className="teamNames">
@@ -95,7 +115,12 @@ function TeamProfile() {
             })
           : null}
         {click5
-          ? Narrator.map((element, index) => {
+          ? Media.map((element, index) => {
+              return <div>{element.name}</div>;
+            })
+          : null}
+        {click6
+          ? Special.map((element, index) => {
               return <div>{element.name}</div>;
             })
           : null}

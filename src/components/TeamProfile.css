@@ -48,10 +48,10 @@
 }
 
 .teamNames {
-  margin-top: 2rem;
+  margin: 4rem;
   display: flex;
   position: relative;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-content: center;
   justify-content: center;
   align-items: center;
@@ -59,12 +59,13 @@
 
 .teamNames div {
   display: flex;
+  margin: 1.5rem;
   vertical-align: middle;
   align-items: center;
   justify-content: center;
   width: 100px;
   height: 50px;
-  margin: 10px 10px;
+
   text-decoration: none;
   color: #4d3252;
   border-radius: 15px;
