@@ -144,3 +144,8 @@
   font-size: 3.5vw;
   justify-content: center;
 }
+
+.logoShowcase img {
+  max-height: 40vh;
+  max-width: 45vw;
+}

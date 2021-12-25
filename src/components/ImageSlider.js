@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SliderData } from "./data/SliderData";
+// import { SliderData } from "./data/SliderData";
 import ProductCard from "./ProductCard";
 import "./ImageSlider.css";
 
@@ -20,15 +20,15 @@ const ImageSlider = ({ slides }) => {
   }
   return (
     <section className="slider">
-      <i className="fas fa-angle-left" onClick={prevSlide}></i>
-      <i className="fas fa-angle-right" onClick={nextSlide}></i>
-      {SliderData.map((slide, index) => {
+      <i className="angle-left" onClick={prevSlide}></i>
+      <i className="angle-right" onClick={nextSlide}></i>
+      {slides.map((slide, index) => {
         return (
           <div
             className={index === current ? "slide active" : "slide"}
             key={index}
           >
-            {index === current && <ProductCard img={slide.image} />}
+            {index === current && <img src={slide.image} />}
           </div>
         );
       })}

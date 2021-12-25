@@ -6,7 +6,7 @@ import calendarPic from "../assets/2019_calendar.png";
 import charterBar from "../assets/chapter_bar.png";
 import bossJ from "../assets/helloj.png";
 import ImageSlider from "../components/ImageSlider";
-import { SliderData } from "../components/data/SliderData";
+import { companyData } from "../components/data/companyData";
 
 function Home() {
   return (
@@ -102,7 +102,7 @@ function Home() {
       </div>
       <section className="logoShowcase">
         <div className="sectionLogoTitle">COMPANY LOGO</div>
-        <ImageSlider slides={SliderData} />
+        <ImageSlider slides={companyData} />
       </section>
     </div>
   );
