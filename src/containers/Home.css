@@ -49,8 +49,7 @@
 .ceoIntro,
 .logoShowcase,
 .team,
-.portfolio,
-.newProducts {
+.portfolio {
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -137,4 +136,24 @@
 .logoShowcase img {
   max-height: 40vh;
   max-width: 45vw;
+}
+
+.newProducts {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+  padding: 0px 200px 0px 200px;
+}
+.newProducts .sectionLogoTitle {
+  padding-bottom: 2.3rem;
+}
+
+.portfolio img {
+  max-height: 60vh;
+  /* max-width: 45vw; */
+}
+
+.newProducts img {
+  max-height: 75vh;
 }

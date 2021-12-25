@@ -8,6 +8,8 @@ import bossJ from "../assets/helloj.png";
 import ImageSlider from "../components/ImageSlider";
 import { companyData } from "../components/data/companyData";
 import TeamProfile from "../components/TeamProfile";
+import { portfolioData } from "../components/data/portfolioData";
+import { newproductData } from "../components/data/newproductData";
 
 function Home() {
   return (
@@ -121,6 +123,7 @@ function Home() {
 
       <section className="portfolio">
         <div className="sectionLogoTitle">WAKLAB'S PORTFOLIO</div>
+        <ImageSlider slides={portfolioData} />
       </section>
 
       <div className="divider">
@@ -129,6 +132,7 @@ function Home() {
 
       <section className="newProducts">
         <div className="sectionLogoTitle">2022 NEW PRODUCTS</div>
+        <ImageSlider slides={newproductData} />
       </section>
     </div>
   );
