@@ -1,0 +1,49 @@
+.teamProfile {
+  background: #eaeff7;
+  align-self: center;
+  margin-top: 3rem;
+  width: 70%;
+  height: 70%;
+  padding: 25px;
+  border-radius: 3px;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.teamProfile .pagination {
+  display: flex;
+  list-style: none;
+  text-align: center;
+}
+
+.teamProfile .pagination li {
+  flex: 1;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #dde1e7;
+  border-radius: 3px;
+  background: #eaeff7;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.teamProfile .pagination li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #4d3252;
+  height: 45px;
+  cursor: pointer;
+  display: block;
+  line-height: 45px;
+  user-select: none;
+  font-weight: 500;
+}
+
+.pagination li.active {
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.pagination li.active a {
+  font-size: 15px;
+  color: #6f6cde;
+  font-weight: 500;
+}

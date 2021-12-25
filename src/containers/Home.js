@@ -7,6 +7,7 @@ import charterBar from "../assets/chapter_bar.png";
 import bossJ from "../assets/helloj.png";
 import ImageSlider from "../components/ImageSlider";
 import { companyData } from "../components/data/companyData";
+import TeamProfile from "../components/TeamProfile";
 
 function Home() {
   return (
@@ -103,6 +104,31 @@ function Home() {
       <section className="logoShowcase">
         <div className="sectionLogoTitle">COMPANY LOGO</div>
         <ImageSlider slides={companyData} />
+      </section>
+
+      <div className="divider">
+        <img src={charterBar} />
+      </div>
+
+      <section className="team">
+        <div className="sectionTitle">팀 멤버 소개</div>
+        <TeamProfile />
+      </section>
+
+      <div className="divider">
+        <img src={charterBar} />
+      </div>
+
+      <section className="portfolio">
+        <div className="sectionLogoTitle">WAKLAB'S PORTFOLIO</div>
+      </section>
+
+      <div className="divider">
+        <img src={charterBar} />
+      </div>
+
+      <section className="newProducts">
+        <div className="sectionLogoTitle">2022 NEW PRODUCTS</div>
       </section>
     </div>
   );

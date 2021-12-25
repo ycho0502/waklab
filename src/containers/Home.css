@@ -45,7 +45,12 @@
   line-height: 1em;
 }
 
-.intro {
+.intro,
+.ceoIntro,
+.logoShowcase,
+.team,
+.portfolio,
+.newProducts {
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -86,14 +91,6 @@
   font-weight: 400;
 }
 
-.ceoIntro {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  position: relative;
-  padding: 0px 200px 0px 200px;
-}
-
 .divider {
   display: flex;
   justify-content: center;
@@ -128,14 +125,6 @@
   flex: 1 1 0;
   width: 0;
   justify-content: center;
-}
-
-.logoShowcase {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  position: relative;
-  padding: 0px 200px 0px 200px;
 }
 
 .sectionLogoTitle {
