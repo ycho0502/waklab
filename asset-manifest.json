@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/waklab/static/css/main.6eed5964.chunk.css",
-    "main.js": "/waklab/static/js/main.071fbb43.chunk.js",
-    "main.js.map": "/waklab/static/js/main.071fbb43.chunk.js.map",
+    "main.css": "/waklab/static/css/main.ee7e3738.chunk.css",
+    "main.js": "/waklab/static/js/main.11692efe.chunk.js",
+    "main.js.map": "/waklab/static/js/main.11692efe.chunk.js.map",
     "runtime-main.js": "/waklab/static/js/runtime-main.3191d22f.js",
     "runtime-main.js.map": "/waklab/static/js/runtime-main.3191d22f.js.map",
     "static/js/2.24a4dc10.chunk.js": "/waklab/static/js/2.24a4dc10.chunk.js",
     "static/js/2.24a4dc10.chunk.js.map": "/waklab/static/js/2.24a4dc10.chunk.js.map",
     "index.html": "/waklab/index.html",
-    "static/css/main.6eed5964.chunk.css.map": "/waklab/static/css/main.6eed5964.chunk.css.map",
+    "static/css/main.ee7e3738.chunk.css.map": "/waklab/static/css/main.ee7e3738.chunk.css.map",
     "static/js/2.24a4dc10.chunk.js.LICENSE.txt": "/waklab/static/js/2.24a4dc10.chunk.js.LICENSE.txt",
     "static/media/2019_calendar.7946f6de.png": "/waklab/static/media/2019_calendar.7946f6de.png",
+    "static/media/2020.png": "/waklab/static/media/2020.83d76bdf.png",
+    "static/media/2021.png": "/waklab/static/media/2021.f7cebc4a.png",
     "static/media/20211124212227.png": "/waklab/static/media/20211124212227.2d26428b.png",
     "static/media/20211124212249.png": "/waklab/static/media/20211124212249.398559d6.png",
     "static/media/20211124212319.png": "/waklab/static/media/20211124212319.4956b7f0.png",
@@ -21,16 +23,20 @@
     "static/media/20211124212457.png": "/waklab/static/media/20211124212457.b9a5dbee.png",
     "static/media/WAK.bbdabd2e.png": "/waklab/static/media/WAK.bbdabd2e.png",
     "static/media/back.bbfb7417.png": "/waklab/static/media/back.bbfb7417.png",
+    "static/media/banner1.png": "/waklab/static/media/banner1.ef52abd3.png",
+    "static/media/banner2.png": "/waklab/static/media/banner2.091912c4.png",
+    "static/media/banner3.png": "/waklab/static/media/banner3.96c85999.png",
     "static/media/company1.png": "/waklab/static/media/company1.54fefc52.png",
     "static/media/company2.png": "/waklab/static/media/company2.6df78fce.png",
     "static/media/company3.png": "/waklab/static/media/company3.d7c9cca7.png",
     "static/media/App.css": "/waklab/static/media/dolce_vita_light-webfont.6489a8e1.woff",
-    "static/media/helloj.3dd49bad.png": "/waklab/static/media/helloj.3dd49bad.png"
+    "static/media/helloj.3dd49bad.png": "/waklab/static/media/helloj.3dd49bad.png",
+    "static/media/launch.png": "/waklab/static/media/launch.9e1f5f08.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3191d22f.js",
     "static/js/2.24a4dc10.chunk.js",
-    "static/css/main.6eed5964.chunk.css",
-    "static/js/main.071fbb43.chunk.js"
+    "static/css/main.ee7e3738.chunk.css",
+    "static/js/main.11692efe.chunk.js"
   ]
 }
