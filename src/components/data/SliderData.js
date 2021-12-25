@@ -10,7 +10,6 @@ const images = importAll(
   require.context("../../assets/products/clothing", false, /\.(png|jpe?g|svg)$/)
 );
 
-console.log(images);
 export const SliderData = [
   {
     name: "Hood",

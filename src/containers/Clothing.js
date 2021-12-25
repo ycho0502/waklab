@@ -6,9 +6,7 @@ import ProductCard from "../components/ProductCard";
 
 function Clothing() {
   return (
-    <div className="clothing">
-      <ImageSlider slides={SliderData} />
-    </div>
+    <div className="clothing">{/* <ImageSlider slides={SliderData} /> */}</div>
   );
 }
 

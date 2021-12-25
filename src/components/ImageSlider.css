@@ -6,21 +6,29 @@
   align-items: center;
 }
 
-.fa-angle-left {
+.angle-left {
+  background-image: url("../assets/arrow_left.png");
   position: absolute;
-  top: 50%;
-  left: 30%;
-  font-size: 3rem;
+  height: 85px;
+  width: 45px;
+  top: 45%;
+  background-size: cover;
+  background-position: center center;
+  left: 7%;
   z-index: 10;
   cursor: pointer;
   user-select: none;
 }
 
-.fa-angle-right {
+.angle-right {
+  background-image: url("../assets/arrow_right.png");
   position: absolute;
-  top: 50%;
-  right: 30%;
-  font-size: 3rem;
+  height: 85px;
+  width: 45px;
+  top: 45%;
+  right: 7%;
+  background-size: cover;
+  background-position: center center;
   z-index: 10;
   cursor: pointer;
   user-select: none;

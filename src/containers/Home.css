@@ -1,7 +1,7 @@
 .showcase {
   top: 0;
   right: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   padding: 0px 200px 0px 200px;
@@ -13,7 +13,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   object-fit: cover;
   opacity: 0.8;
@@ -23,7 +23,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: #778b6b;
   mix-blend-mode: overlay;
@@ -42,15 +42,20 @@
 
 .vidText h3 {
   font-size: 3em;
-  line-height: 1em;
+  line-height: 2em;
 }
 
-.intro {
+.intro,
+.ceoIntro,
+.logoShowcase,
+.team,
+.portfolio {
   display: flex;
   height: 100vh;
   flex-direction: column;
   position: relative;
   padding: 0px 200px 0px 200px;
+  overflow: hidden;
 }
 
 .intro .bgText {
@@ -84,14 +89,6 @@
 .intro p {
   font-size: 1.2vw;
   font-weight: 400;
-}
-
-.ceoIntro {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  position: relative;
-  padding: 0px 200px 0px 200px;
 }
 
 .divider {
@@ -128,4 +125,35 @@
   flex: 1 1 0;
   width: 0;
   justify-content: center;
+}
+
+.sectionLogoTitle {
+  font-family: "dolce_vita_lightregular";
+  display: flex;
+  font-size: 3.5vw;
+  justify-content: center;
+}
+
+.logoShowcase img {
+  max-height: 40vh;
+  max-width: 45vw;
+}
+
+.newProducts {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.newProducts .sectionLogoTitle {
+  padding-bottom: 2.3rem;
+}
+
+.portfolio img {
+  max-height: 60vh;
+}
+
+.newProducts img {
+  max-height: 100vh;
 }

@@ -1,0 +1,46 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  padding: 0 25rem 0 25rem;
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+}
+
+.footer .first {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  color: aliceblue;
+  padding-top: 60px;
+}
+
+.footer .first .contact {
+  text-align: center;
+  font-size: 20px;
+}
+
+.footer .first .discord {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.discord .discordIcon {
+  padding-right: 15px;
+  height: 35px;
+}
+.footer .first .email {
+  text-align: center;
+  font-size: 13px;
+}
+
+.footer hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.secondfooter {
+  color: aliceblue;
+}
