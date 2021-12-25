@@ -15,6 +15,7 @@ import Calender from "./containers/Calender";
 import Clothing from "./containers/Clothing";
 import Isedol from "./containers/Isedol";
 import ScrollToTop from "./components/ScrollToTop";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/" exact element={<Home />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
