@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 import "./TeamProfile.css";
+import {
+  Illustrator,
+  Designer,
+  Model,
+  Programmer,
+  Narrator,
+} from "./data/TeamData";
 
 function TeamProfile() {
   const [click1, setClick1] = useState(true);
@@ -66,7 +73,33 @@ function TeamProfile() {
           <a>나레이터</a>
         </li>
       </ul>
-      <div> Hello</div>
+      <div className="teamNames">
+        {click1
+          ? Designer.map((element, index) => {
+              return <div>{element.name}</div>;
+            })
+          : null}
+        {click2
+          ? Illustrator.map((element, index) => {
+              return <div>{element.name}</div>;
+            })
+          : null}
+        {click3
+          ? Model.map((element, index) => {
+              return <div>{element.name}</div>;
+            })
+          : null}
+        {click4
+          ? Programmer.map((element, index) => {
+              return <div>{element.name}</div>;
+            })
+          : null}
+        {click5
+          ? Narrator.map((element, index) => {
+              return <div>{element.name}</div>;
+            })
+          : null}
+      </div>
     </div>
   );
 }

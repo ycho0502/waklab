@@ -1,12 +1,11 @@
 .teamProfile {
-  background: #eaeff7;
   align-self: center;
   margin-top: 3rem;
   width: 70%;
   height: 70%;
   padding: 25px;
   border-radius: 3px;
-  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  /* box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288); */
 }
 
 .teamProfile .pagination {
@@ -21,7 +20,7 @@
   text-decoration: none;
   color: #dde1e7;
   border-radius: 3px;
-  background: #eaeff7;
+  background: white;
   box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
@@ -46,4 +45,30 @@
   font-size: 15px;
   color: #6f6cde;
   font-weight: 500;
+}
+
+.teamNames {
+  margin-top: 2rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamNames div {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+  margin: 10px 10px;
+  text-decoration: none;
+  color: #4d3252;
+  border-radius: 15px;
+  background: white;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  user-select: none;
 }
