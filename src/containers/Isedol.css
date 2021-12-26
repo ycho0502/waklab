@@ -1,0 +1,52 @@
+.isedol {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.edge {
+  position: absolute;
+  z-index: 1001;
+  width: 100%;
+  height: 100vh;
+}
+
+.title {
+  margin: auto auto;
+  max-width: 1300px;
+}
+
+.title_img {
+  position: relative;
+  z-index: 1001;
+  top: 10vh;
+  display: inline-block;
+}
+
+.isedolMain_bg_container {
+  position: absolute;
+  align-items: center;
+  justify-self: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.arrow {
+  position: relative;
+  width: 86px;
+  margin: auto;
+  top: auto;
+  bottom: -70vh;
+}
+
+.isedolMain_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
