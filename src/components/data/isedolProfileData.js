@@ -20,8 +20,8 @@ export const isedolProfileData = [
     image: images["ine.png"].default,
   },
   {
-    name: "jingberger",
-    image: images["jingberger.png"].default,
+    name: "jingburger",
+    image: images["jingburger.png"].default,
   },
   {
     name: "lilpa",
