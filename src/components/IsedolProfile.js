@@ -8,11 +8,12 @@ const IsedolProfile = ({ isedolProfileData, handleImageClick }) => {
   const bottumline = isedolProfileData.slice(3);
 
   return (
-    <div class="isedol_profile">
-      <div class="topLineContainer">
-        {topline.map((image) => (
-          <div className="cover gosegu">
+    <div className="isedol_profile">
+      <div className="topLineContainer">
+        {topline.map((image, idx) => (
+          <div className="cover" key={`${image.name}_${idx}_profile_mini`}>
             <img
+              name={idx + 1}
               onClick={handleImageClick}
               className={`profile_small ${image.name}`}
               src={image.image}
@@ -22,9 +23,11 @@ const IsedolProfile = ({ isedolProfileData, handleImageClick }) => {
         ))}
       </div>
       <div className="bottumLineContainer">
-        {bottumline.map((image) => (
-          <div className="cover">
+        {bottumline.map((image, idx) => (
+          <div className="cover" key={`${image.name}_${idx}_profile_mini`}>
             <img
+              name={idx + 4}
+              onClick={handleImageClick}
               className={`profile_small ${image.name}`}
               src={image.image}
               alt={image.name}
