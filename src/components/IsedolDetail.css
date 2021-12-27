@@ -1,9 +1,18 @@
 .isedol_BG {
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
-  position: relative;
-  z-index: 1100;
-  opacity: 1;
+  position: fixed;
+  z-index: 1200;
+}
+
+.open {
+  animation: fadeInFromNone 1s ease-in-out;
+}
+
+.close {
+  animation: fadeInFromNoneReverse 1s ease-in-out;
 }
 
 .Profile_container {
@@ -23,14 +32,14 @@
 }
 
 .isedol_Profile {
-  z-index: 1002;
+  z-index: 1201;
 }
 
 .isedol_write {
   position: absolute;
-  left: 35vw;
   transform: translate(-40%, 5%);
-  z-index: 1003;
+  left: 35vw;
+  z-index: 1202;
 }
 
 .isedol_sign {
@@ -38,5 +47,56 @@
   top: 75%;
   left: 50%;
   transform: translate(0%, -20%);
-  z-index: 1003;
+  z-index: 1202;
+}
+
+@-webkit-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromNoneReverse {
+  0% {
+    display: none;
+    opacity: 1;
+  }
+
+  99% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 0;
+  }
 }

@@ -13,7 +13,7 @@ const IsedolProfile = ({ isedolProfileData, handleImageClick }) => {
         {topline.map((image, idx) => (
           <div className="cover" key={`${image.name}_${idx}_profile_mini`}>
             <img
-              name={idx + 1}
+              name={idx}
               onClick={handleImageClick}
               className={`profile_small ${image.name}`}
               src={image.image}
@@ -26,7 +26,7 @@ const IsedolProfile = ({ isedolProfileData, handleImageClick }) => {
         {bottumline.map((image, idx) => (
           <div className="cover" key={`${image.name}_${idx}_profile_mini`}>
             <img
-              name={idx + 4}
+              name={idx + 3}
               onClick={handleImageClick}
               className={`profile_small ${image.name}`}
               src={image.image}

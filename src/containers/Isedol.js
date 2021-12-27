@@ -17,8 +17,13 @@ function Isedol() {
 
   //이세돌 프로필 클릭시 스테이트 변경
   const [chooseIsedol, setChooseIsedol] = useState({ currentIdol: 0 });
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const handleIdolClick = (e) => {
     setChooseIsedol({ currentIdol: e.target.name });
+    setIsModalOpen(true);
+  };
+  const handleModalClose = () => {
+    setIsModalOpen(false);
   };
 
   const audioPlay = useCallback(async (audio) => {
@@ -36,18 +41,19 @@ function Isedol() {
 
   useEffect(() => {
     plaing ? audioPlay(audio) : audioPause(audio);
-  }, []);
+  }, [plaing, audioPlay, audioPause, audio]);
 
   useEffect(() => {
     audio.addEventListener("ended", () => setPlayer(false));
     return () => {
+      audioPause(audio);
       audio.removeEventListener("ended", () => setPlayer(false));
     };
   }, []);
 
   return (
     <div className="isedol">
-      <ReactPageScroller customPageNumber={chooseIsedol.currentIdol}>
+      <ReactPageScroller>
         <section>
           <img className="edge" src={isedol_edge} alt="edge" />
           <div className="title">
@@ -64,15 +70,16 @@ function Isedol() {
             <img src={arrow} alt="arrow" />
           </div>
         </section>
-        {isedolsDetailData.map((isedol, idx) => (
-          <IsedolDetail
-            key={`${isedol.name}_${idx}`}
-            chooseIsedol={chooseIsedol}
-            isedol={isedol}
-            handleImageClick={handleIdolClick}
-          />
-        ))}
+        <section></section>
       </ReactPageScroller>
+      {isModalOpen ? (
+        <IsedolDetail
+          isModalOpen={isModalOpen}
+          chooseIsedol={chooseIsedol}
+          isedol={isedolsDetailData[chooseIsedol.currentIdol]}
+          handleModalClose={handleModalClose}
+        />
+      ) : null}
     </div>
   );
 }
