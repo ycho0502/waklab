@@ -1,0 +1,61 @@
+.gold_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 386px;
+  height: 770px;
+  background-image: url("../assets/isedolProfile/Profile_edge.png");
+  background-size: 100% 100%;
+  transform: translate(-50%, -50%);
+  animation: fadeInImage 1.5s ease-in-out;
+}
+
+.img_frame {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.Isedol_Profile_Resource {
+  position: absolute;
+  animation: scale 1.5s ease-in-out;
+}
+
+@keyframes scale {
+  1% {
+    width: 210.56px;
+    height: 210.56px;
+    transform: scale(0.7) rotate(-45deg);
+  }
+
+  30% {
+    transform: scale(1.5) rotate(-15deg);
+  }
+  100% {
+    width: 396px;
+    height: 770px;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInImage {
+  0% {
+    display: none;
+    transform: scale(0.7) rotate(45deg);
+    left: var(--left);
+    top: var(--top);
+    width: 230.56px;
+    height: 230.56px;
+    z-index: 1300;
+  }
+
+  100% {
+    left: 50%;
+    top: 50%;
+    width: 386px;
+    height: 770px;
+    z-index: 1200;
+    transform: translate(-50%, -50%);
+  }
+}
