@@ -11,6 +11,7 @@ import { isedolsDetailData } from "../components/data/isedolsDetailData";
 import IsedolDetail from "../components/IsedolDetail";
 import Re_wind_inst from "../assets/RE_WIND_Inst.mp3";
 import Particle from "../components/Particle";
+import IsedolMarchandise from "../components/IsedolMarchandise";
 
 function Isedol() {
   const [audio] = useState(new Audio(Re_wind_inst));
@@ -33,6 +34,7 @@ function Isedol() {
     console.log(particle);
     setParticle(!particle);
   };
+
   const handleIdolClick = (e, elePosition) => {
     console.log(elePosition, e.target.name);
     setPosition({
@@ -42,6 +44,7 @@ function Isedol() {
     setChooseIsedol({ currentIdol: e.target.name });
     setIsModalOpen(true);
   };
+
   const handleModalClose = () => {
     setIsModalOpen(false);
   };
@@ -92,7 +95,9 @@ function Isedol() {
             <img src={arrow} alt="arrow" onClick={handleReverse} />
           </div>
         </section>
-        <section className="temp"></section>
+        <section className="marchandise_container">
+          <IsedolMarchandise />
+        </section>
       </ReactPageScroller>
       {isModalOpen ? (
         <IsedolDetail
