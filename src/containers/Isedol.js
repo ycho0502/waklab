@@ -16,9 +16,20 @@ function Isedol() {
   const [plaing, setPlayer] = useState(true);
 
   //이세돌 프로필 클릭시 스테이트 변경
-  const [chooseIsedol, setChooseIsedol] = useState({ currentIdol: 0 });
+  const [chooseIsedol, setChooseIsedol] = useState({
+    currentIdol: 0,
+  });
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const handleIdolClick = (e) => {
+  const [position, setPosition] = useState({
+    top: "50%",
+    left: "50%",
+  });
+  const handleIdolClick = (e, elePosition) => {
+    console.log(elePosition, e.target.name);
+    setPosition({
+      top: elePosition.top,
+      left: elePosition.left,
+    });
     setChooseIsedol({ currentIdol: e.target.name });
     setIsModalOpen(true);
   };
@@ -40,7 +51,7 @@ function Isedol() {
   }, []);
 
   useEffect(() => {
-    plaing ? audioPlay(audio) : audioPause(audio);
+    // plaing ? audioPlay(audio) : audioPause(audio);
   }, [plaing, audioPlay, audioPause, audio]);
 
   useEffect(() => {
@@ -49,7 +60,7 @@ function Isedol() {
       audioPause(audio);
       audio.removeEventListener("ended", () => setPlayer(false));
     };
-  }, []);
+  }, [audio, audioPlay, audioPause, plaing]);
 
   return (
     <div className="isedol">
@@ -57,13 +68,17 @@ function Isedol() {
         <section>
           <img className="edge" src={isedol_edge} alt="edge" />
           <div className="title">
-            <img className="title_img" src={isedol_title} alt="title" />
+            <img
+              className="title_img"
+              src={isedol_title}
+              alt="title"
+            />
           </div>
           <div className="isedolMain_bg_container">
             <img className="isedolMain_bg" src={Bg_main} alt="main" />
             <IsedolProfile
               isedolProfileData={isedolProfileData}
-              handleImageClick={handleIdolClick}
+              handleImageClick={isModalOpen ? null : handleIdolClick}
             />
           </div>
           <div className="arrow">
@@ -78,6 +93,8 @@ function Isedol() {
           chooseIsedol={chooseIsedol}
           isedol={isedolsDetailData[chooseIsedol.currentIdol]}
           handleModalClose={handleModalClose}
+          top={position.top}
+          left={position.left}
         />
       ) : null}
     </div>
