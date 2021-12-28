@@ -1,11 +1,12 @@
 import "./IsedolProfile.css";
 import ProfileUnit from "./ProfileUnit";
 
-const IsedolProfile = ({ isedolProfileData, handleImageClick }) => {
-  if (
-    !Array.isArray(isedolProfileData) ||
-    isedolProfileData.length <= 0
-  ) {
+const IsedolProfile = ({
+  isedolProfileData,
+  handleImageClick,
+  isModalOpen,
+}) => {
+  if (!Array.isArray(isedolProfileData) || isedolProfileData.length <= 0) {
     return null;
   }
   const topline = isedolProfileData.slice(0, 3);
@@ -17,6 +18,7 @@ const IsedolProfile = ({ isedolProfileData, handleImageClick }) => {
         {topline.map((image, idx) => (
           <ProfileUnit
             handleImageClick={handleImageClick}
+            isModalOpen={isModalOpen}
             image={image}
             idx={idx}
           />
@@ -26,6 +28,7 @@ const IsedolProfile = ({ isedolProfileData, handleImageClick }) => {
         {bottumline.map((image, idx) => (
           <ProfileUnit
             handleImageClick={handleImageClick}
+            isModalOpen={isModalOpen}
             image={image}
             idx={idx + 3}
           />

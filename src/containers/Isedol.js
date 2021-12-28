@@ -10,6 +10,7 @@ import ReactPageScroller from "react-page-scroller";
 import { isedolsDetailData } from "../components/data/isedolsDetailData";
 import IsedolDetail from "../components/IsedolDetail";
 import Re_wind_inst from "../assets/RE_WIND_Inst.mp3";
+import Particle from "../components/Particle";
 
 function Isedol() {
   const [audio] = useState(new Audio(Re_wind_inst));
@@ -20,10 +21,18 @@ function Isedol() {
     currentIdol: 0,
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // 파티클 핸들러
+  const [particle, setParticle] = useState(true);
   const [position, setPosition] = useState({
     top: "50%",
     left: "50%",
   });
+
+  const handleReverse = () => {
+    console.log(particle);
+    setParticle(!particle);
+  };
   const handleIdolClick = (e, elePosition) => {
     console.log(elePosition, e.target.name);
     setPosition({
@@ -66,26 +75,24 @@ function Isedol() {
     <div className="isedol">
       <ReactPageScroller>
         <section>
+          <Particle particle={particle} />
           <img className="edge" src={isedol_edge} alt="edge" />
           <div className="title">
-            <img
-              className="title_img"
-              src={isedol_title}
-              alt="title"
-            />
+            <img className="title_img" src={isedol_title} alt="title" />
           </div>
           <div className="isedolMain_bg_container">
             <img className="isedolMain_bg" src={Bg_main} alt="main" />
             <IsedolProfile
               isedolProfileData={isedolProfileData}
               handleImageClick={isModalOpen ? null : handleIdolClick}
+              isModalOpen={isModalOpen}
             />
           </div>
           <div className="arrow">
-            <img src={arrow} alt="arrow" />
+            <img src={arrow} alt="arrow" onClick={handleReverse} />
           </div>
         </section>
-        <section></section>
+        <section className="temp"></section>
       </ReactPageScroller>
       {isModalOpen ? (
         <IsedolDetail

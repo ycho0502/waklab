@@ -8,9 +8,26 @@
   object-fit: cover;
 }
 
+.temp {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+#tsparticles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+}
+
 .edge {
   position: absolute;
-  z-index: 1001;
+  z-index: 1003;
   width: 100%;
   height: 100vh;
 }
@@ -43,6 +60,7 @@
   margin: auto;
   top: auto;
   bottom: -70vh;
+  z-index: 1004;
 }
 
 .isedolMain_bg {

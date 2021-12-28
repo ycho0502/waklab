@@ -24,13 +24,13 @@
 
 @keyframes scale {
   1% {
-    width: 210.56px;
-    height: 210.56px;
-    transform: scale(0.7) rotate(-45deg);
+    width: 300px;
+    height: 500px;
+    transform: scale(1.3) rotate(-45deg);
   }
 
   30% {
-    transform: scale(1.5) rotate(-15deg);
+    transform: scale(0.9) rotate(-15deg);
   }
   100% {
     width: 396px;
@@ -42,12 +42,23 @@
 @keyframes fadeInImage {
   0% {
     display: none;
-    transform: scale(0.7) rotate(45deg);
+    transform: scale(0.7) rotate(49deg);
     left: var(--left);
     top: var(--top);
     width: 230.56px;
     height: 230.56px;
     z-index: 1300;
+    opacity: 0.95;
+  }
+
+  93% {
+    left: 50%;
+    top: 50%;
+    width: 386px;
+    height: 770px;
+    z-index: 1200;
+    transform: scale(1) translate(-50%, -50%);
+    opacity: 1;
   }
 
   100% {
@@ -56,6 +67,7 @@
     width: 386px;
     height: 770px;
     z-index: 1200;
-    transform: translate(-50%, -50%);
+    transform: scale(1) translate(-50%, -50%);
+    opacity: 0.5;
   }
 }
