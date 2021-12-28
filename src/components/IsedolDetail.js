@@ -2,24 +2,29 @@ import "./IsedolDetail.css";
 import Profile_bg from "../assets/isedolsDetail/Profile_bg.png";
 import { useCallback } from "react";
 import { useState } from "react/cjs/react.development";
+import IsedolFadeOut from "./IsedolFadeOut";
 
-const IsedolDetail = ({ isedol, handleModalClose, isModalOpen }) => {
+const IsedolDetail = ({
+  isedol,
+  handleModalClose,
+  isModalOpen,
+  top,
+  left,
+}) => {
   const [isModal, setisModal] = useState(isModalOpen);
 
   const handleClick = useCallback(() => {
     setisModal(false);
     setTimeout(() => {
       handleModalClose();
-    }, 1000);
+    }, 500);
   }, []);
 
   return (
-    <>
-      <img
-        className="isedol_Profile center"
-        src={isedol.image}
-        alt={isedol.name}
-      />
+    <div>
+      {isModal ? (
+        <IsedolFadeOut isedol={isedol} top={top} left={left} />
+      ) : null}
       <section
         className={`isedol_BG ${isModal ? "open" : "close"}`}
         onClick={handleClick}
@@ -52,7 +57,7 @@ const IsedolDetail = ({ isedol, handleModalClose, isModalOpen }) => {
           />
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
