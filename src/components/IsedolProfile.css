@@ -40,3 +40,21 @@
 .hide {
   display: none;
 }
+
+.hover_name {
+  display: inline-block;
+  transform: rotate(45deg);
+  margin: auto;
+  color: white;
+}
+
+.hover_bg {
+  display: flex;
+  position: absolute;
+  z-index: 1006;
+  width: 100%;
+  height: 100%;
+  padding-top: 12px;
+  background-color: black;
+  opacity: 0.6;
+}

@@ -4,7 +4,7 @@ import Particles from "react-tsparticles";
 export default function Particle({ particle }) {
   let [direction, setDirection] = useState("bottom");
   useEffect(() => {
-    setDirection(particle ? "bottom" : "top");
+    setDirection(particle ? -3 : 3);
   }, [particle]);
   return (
     <Particles
@@ -22,10 +22,10 @@ export default function Particle({ particle }) {
             random: true,
           },
           move: {
-            direction: direction,
+            direction: "bottom",
             enable: true,
             outMode: "out",
-            speed: 3,
+            speed: direction,
           },
           links: {
             enable: false,
@@ -46,9 +46,9 @@ export default function Particle({ particle }) {
         },
         interactivity: {
           events: {
-            onClick: {
+            onhover: {
               enable: true,
-              mode: "remove",
+              mode: "repulse",
             },
           },
           modes: {

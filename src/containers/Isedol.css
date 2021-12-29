@@ -65,6 +65,10 @@
   z-index: 1004;
 }
 
+.arrow_image:hover {
+  filter: drop-shadow(12px 12px 25px rgba(255, 178, 35, 0.8));
+}
+
 .isedolMain_bg {
   position: absolute;
   width: 100%;

@@ -35,13 +35,13 @@ function Isedol() {
     setParticle(!particle);
   };
 
-  const handleIdolClick = (e, elePosition) => {
-    console.log(elePosition, e.target.name);
+  const handleIdolClick = (idx, elePosition) => {
+    console.log(elePosition, idx);
     setPosition({
       top: elePosition.top,
       left: elePosition.left,
     });
-    setChooseIsedol({ currentIdol: e.target.name });
+    setChooseIsedol({ currentIdol: idx });
     setIsModalOpen(true);
   };
 
@@ -81,7 +81,11 @@ function Isedol() {
           <Particle particle={particle} />
           <img className="edge" src={isedol_edge} alt="edge" />
           <div className="title">
-            <img className="title_img" src={isedol_title} alt="title" />
+            <img
+              className="title_img"
+              src={isedol_title}
+              alt="title"
+            />
           </div>
           <div className="isedolMain_bg_container">
             <img className="isedolMain_bg" src={Bg_main} alt="main" />
@@ -92,7 +96,12 @@ function Isedol() {
             />
           </div>
           <div className="arrow">
-            <img src={arrow} alt="arrow" onClick={handleReverse} />
+            <img
+              className="arrow_image"
+              src={arrow}
+              alt="arrow"
+              onClick={handleReverse}
+            />
           </div>
         </section>
         <section className="marchandise_container">
