@@ -63,7 +63,7 @@ function Isedol() {
   }, []);
 
   useEffect(() => {
-    // plaing ? audioPlay(audio) : audioPause(audio);
+    plaing ? audioPlay(audio) : audioPause(audio);
   }, [plaing, audioPlay, audioPause, audio]);
 
   useEffect(() => {
@@ -81,11 +81,7 @@ function Isedol() {
           <Particle particle={particle} />
           <img className="edge" src={isedol_edge} alt="edge" />
           <div className="title">
-            <img
-              className="title_img"
-              src={isedol_title}
-              alt="title"
-            />
+            <img className="title_img" src={isedol_title} alt="title" />
           </div>
           <div className="isedolMain_bg_container">
             <img className="isedolMain_bg" src={Bg_main} alt="main" />
