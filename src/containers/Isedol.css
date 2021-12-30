@@ -1,0 +1,76 @@
+.isedol {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.marchandise_container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#tsparticles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+}
+
+.edge {
+  position: absolute;
+  z-index: 1003;
+  width: 100%;
+  height: 100vh;
+}
+
+.title {
+  margin: auto auto;
+  max-width: 1300px;
+}
+
+.title_img {
+  position: relative;
+  z-index: 1001;
+  top: 10vh;
+  display: inline-block;
+}
+
+.isedolMain_bg_container {
+  position: absolute;
+  align-items: center;
+  justify-self: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.arrow {
+  position: relative;
+  width: 86px;
+  margin: auto;
+  top: auto;
+  bottom: -70vh;
+  z-index: 1004;
+}
+
+.arrow_image:hover {
+  filter: drop-shadow(12px 12px 25px rgba(255, 178, 35, 0.8));
+}
+
+.isedolMain_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
