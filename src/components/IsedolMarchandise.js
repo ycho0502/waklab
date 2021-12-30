@@ -5,13 +5,31 @@ import marchandise_title from "../assets/isedolMarchandise/marchandise_title.png
 import photocard from "../assets/isedolMarchandise/photocard.png";
 import poster from "../assets/isedolMarchandise/poster.png";
 import sticker from "../assets/isedolMarchandise/sticker.png";
+import { useState } from "react";
+import IsedolMarchandiseDetail from "./IsedolMarchandiseDetail";
 
 import "./IsedolMarchandise.css";
+
 const IsedolMarchandise = () => {
+  const [isProductModal, setIsProductModal] = useState(false);
+  const [productType, setProductType] = useState();
+
+  const handleModal = (e) => {
+    setIsProductModal(true);
+    setProductType(e.target.name);
+  };
+
   return (
     <>
+      {isProductModal ? (
+        <IsedolMarchandiseDetail type={productType} />
+      ) : null}
       <img src={isedol_edge} className="edge" alt="edge" />
-      <img src={Profile_bg} className="marchandise_BG" alt="background" />
+      <img
+        src={Profile_bg}
+        className="marchandise_BG"
+        alt="background"
+      />
       <div className="marchandise_title">
         <img
           src={marchandise_title}
@@ -22,16 +40,40 @@ const IsedolMarchandise = () => {
       <div className="items_container">
         <div className="left_item">
           <div className="photocard">
-            <img src={photocard} className="photocard item" alt="potocard" />
+            <img
+              onClick={handleModal}
+              name="photoCard"
+              src={photocard}
+              className="photocard item"
+              alt="photocard"
+            />
           </div>
 
-          <img src={acrylic_stand} className="acrylic item" alt="acrylic" />
+          <img
+            onClick={handleModal}
+            name="acrylic"
+            src={acrylic_stand}
+            className="acrylic item"
+            alt="acrylic"
+          />
         </div>
         <div className="center_item">
-          <img src={poster} alt="poster" className="poster item" />
+          <img
+            onClick={handleModal}
+            name="poster"
+            src={poster}
+            alt="poster"
+            className="poster item"
+          />
         </div>
         <div className="right_item">
-          <img src={sticker} alt="sticker" className="sticker item" />
+          <img
+            onClick={handleModal}
+            name="sticker"
+            src={sticker}
+            alt="sticker"
+            className="sticker item"
+          />
         </div>
       </div>
     </>

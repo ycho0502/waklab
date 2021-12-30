@@ -7,32 +7,36 @@ function importAll(r) {
 }
 
 const images = importAll(
-  require.context("../../assets/isedolProfile", false, /\.(png|jpe?g|svg)$/)
+  require.context(
+    "../../assets/isedolProfile",
+    false,
+    /\.(png|jpe?g|svg)$/,
+  ),
 );
 
 export const isedolProfileData = [
   {
-    name: "gosegu",
+    name: "GOSEGU",
     image: images["gosegu.png"].default,
   },
   {
-    name: "ine",
+    name: "INE",
     image: images["ine.png"].default,
   },
   {
-    name: "jingburger",
+    name: "JINGBURGER",
     image: images["jingburger.png"].default,
   },
   {
-    name: "lilpa",
+    name: "LILPA",
     image: images["lilpa.png"].default,
   },
   {
-    name: "viichan",
+    name: "VIICHAN",
     image: images["viichan.png"].default,
   },
   {
-    name: "jururu",
+    name: "JURURU",
     image: images["jururu.png"].default,
   },
 ];
