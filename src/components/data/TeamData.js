@@ -78,6 +78,9 @@ export const Programmer = [
     name: "광도리",
   },
   {
+    name: "한국김치맛있다",
+  },
+  {
     name: "dopeboy",
   },
 ];
