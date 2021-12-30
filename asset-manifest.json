@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/waklab/static/css/main.2c686e7f.chunk.css",
-    "main.js": "/waklab/static/js/main.a23af0bc.chunk.js",
-    "main.js.map": "/waklab/static/js/main.a23af0bc.chunk.js.map",
+    "main.js": "/waklab/static/js/main.a8849063.chunk.js",
+    "main.js.map": "/waklab/static/js/main.a8849063.chunk.js.map",
     "runtime-main.js": "/waklab/static/js/runtime-main.3191d22f.js",
     "runtime-main.js.map": "/waklab/static/js/runtime-main.3191d22f.js.map",
-    "static/js/2.7be1847e.chunk.js": "/waklab/static/js/2.7be1847e.chunk.js",
-    "static/js/2.7be1847e.chunk.js.map": "/waklab/static/js/2.7be1847e.chunk.js.map",
+    "static/js/2.9d1cf705.chunk.js": "/waklab/static/js/2.9d1cf705.chunk.js",
+    "static/js/2.9d1cf705.chunk.js.map": "/waklab/static/js/2.9d1cf705.chunk.js.map",
     "index.html": "/waklab/index.html",
     "static/css/main.2c686e7f.chunk.css.map": "/waklab/static/css/main.2c686e7f.chunk.css.map",
-    "static/js/2.7be1847e.chunk.js.LICENSE.txt": "/waklab/static/js/2.7be1847e.chunk.js.LICENSE.txt",
+    "static/js/2.9d1cf705.chunk.js.LICENSE.txt": "/waklab/static/js/2.9d1cf705.chunk.js.LICENSE.txt",
     "static/media/2019_calendar.7946f6de.png": "/waklab/static/media/2019_calendar.7946f6de.png",
     "static/media/2020.png": "/waklab/static/media/2020.83d76bdf.png",
     "static/media/2021.png": "/waklab/static/media/2021.f7cebc4a.png",
@@ -77,8 +77,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.3191d22f.js",
-    "static/js/2.7be1847e.chunk.js",
+    "static/js/2.9d1cf705.chunk.js",
     "static/css/main.2c686e7f.chunk.css",
-    "static/js/main.a23af0bc.chunk.js"
+    "static/js/main.a8849063.chunk.js"
   ]
 }
