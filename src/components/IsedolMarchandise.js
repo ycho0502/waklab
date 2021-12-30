@@ -15,21 +15,17 @@ const IsedolMarchandise = () => {
   const [productType, setProductType] = useState();
 
   const handleModal = (e) => {
-    setIsProductModal(true);
+    setIsProductModal(!isProductModal);
     setProductType(e.target.name);
   };
 
   return (
     <>
       {isProductModal ? (
-        <IsedolMarchandiseDetail type={productType} />
+        <IsedolMarchandiseDetail type={productType} handleModal={handleModal} />
       ) : null}
       <img src={isedol_edge} className="edge" alt="edge" />
-      <img
-        src={Profile_bg}
-        className="marchandise_BG"
-        alt="background"
-      />
+      <img src={Profile_bg} className="marchandise_BG" alt="background" />
       <div className="marchandise_title">
         <img
           src={marchandise_title}

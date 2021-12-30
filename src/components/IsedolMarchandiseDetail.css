@@ -8,7 +8,7 @@
 }
 
 .marchandiseDetail_BG {
-  z-index: 1400;
+  z-index: 1401;
   width: 100%;
   height: 100vh;
 }
@@ -179,19 +179,104 @@
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  z-index: 1401;
-  width: 75%;
-  height: 100vh;
+  z-index: 1402;
+  width: 80%;
+  height: 90%;
   object-fit: contain;
+  perspective: 200rem;
+  top: 4vh;
 }
 
 .photocard_left {
-  height: 80vh;
+  position: relative;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
+  perspective: 1000px;
+  flex: 1 1 50%;
 }
 
 .photocard_frame {
   position: absolute;
+}
+
+.pickIsedol_front,
+.pickIsedol_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.photocard_inventory {
+  margin: auto 0;
+  width: 444px;
+  height: 705px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  z-index: 1402;
+}
+
+.pickIsedol_back {
+  transform: rotateY(180deg);
+}
+
+.photocard_left:hover .photocard_inventory {
+  transform: rotateY(-180deg);
+}
+
+.photocard_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 60vw;
+  flex: 2 1 90%;
+}
+
+.photocard_top_quote {
+  margin: 15px auto;
+  width: 486px;
+  height: 47px;
+}
+
+.photocard_bottom_quote {
+  margin: 15px auto;
+  width: 367px;
+  height: 25px;
+}
+
+.mini_isedol_button_container {
+  position: relative;
+  width: 80%;
+  min-width: 1036px;
+  margin: 0 auto;
+  margin-left: 5%;
+}
+
+.mini_isedol {
+  width: 160px;
+  object-fit: cover;
+  position: relative;
+  margin: -10px;
+  margin-top: 60px;
+  z-index: 1410;
+}
+
+.mini_isedol:last-child {
+  position: relative;
+}
+
+.mini_isedol_click {
+  margin-right: -30px;
+  margin-left: -10px;
+  position: relative;
+  transform: scale(1.1);
+}
+
+.photocard_texture {
+  width: 80%;
+  margin: 0 auto;
 }

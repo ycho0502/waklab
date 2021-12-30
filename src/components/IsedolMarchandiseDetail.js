@@ -1,19 +1,14 @@
 import { useState } from "react";
 import { isedolMarchandiseDetail } from "./data/isedolMarchandiseDetail";
 import "./IsedolMarchandiseDetail.css";
-import {
-  Acrylic,
-  PhotoCard,
-  Poster,
-  Stricker,
-} from "./IsedolProductDetail";
+import { Acrylic, PhotoCard, Poster, Stricker } from "./IsedolProductDetail";
 import Profile_bg from "../assets/isedolsDetail/Profile_bg.png";
 
-const IsedolMarchandiseDetail = ({ type }) => {
+const IsedolMarchandiseDetail = ({ type, handleModal }) => {
   const [marchandise] = useState(
     isedolMarchandiseDetail.filter((item) => {
       return item.type === type;
-    }),
+    })
   );
 
   const handleDetailPage = () => {
@@ -34,12 +29,13 @@ const IsedolMarchandiseDetail = ({ type }) => {
 
   return (
     <section className="marchabdise_detail">
-      {marchandise ? handleDetailPage() : null}
       <img
         className="marchandiseDetail_BG"
+        onClick={handleModal}
         src={Profile_bg}
         alt="background"
       />
+      {marchandise ? handleDetailPage() : null}
     </section>
   );
 };

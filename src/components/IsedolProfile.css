@@ -45,6 +45,7 @@
   display: inline-block;
   transform: rotate(45deg);
   margin: auto;
+  font: 30px "NewYork";
   color: white;
 }
 
