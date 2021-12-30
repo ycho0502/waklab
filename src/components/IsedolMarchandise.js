@@ -15,6 +15,13 @@ const IsedolMarchandise = () => {
   const [productType, setProductType] = useState();
 
   const handleModal = (e) => {
+    console.log(e.target.className);
+    if (
+      e.target.className === "mini_isedol" ||
+      e.target.className === "sticker_product"
+    ) {
+      return;
+    }
     setIsProductModal(!isProductModal);
     setProductType(e.target.name);
   };

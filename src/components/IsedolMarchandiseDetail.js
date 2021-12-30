@@ -28,14 +28,9 @@ const IsedolMarchandiseDetail = ({ type, handleModal }) => {
   };
 
   return (
-    <section className="marchabdise_detail">
-      <img
-        className="marchandiseDetail_BG"
-        onClick={handleModal}
-        src={Profile_bg}
-        alt="background"
-      />
+    <section className="marchabdise_detail" onClick={handleModal}>
       {marchandise ? handleDetailPage() : null}
+      <img className="marchandiseDetail_BG" src={Profile_bg} alt="background" />
     </section>
   );
 };
