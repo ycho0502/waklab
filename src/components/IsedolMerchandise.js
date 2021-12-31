@@ -1,16 +1,16 @@
 import isedol_edge from "../assets/isedolMain/isedol_edge.png";
 import Profile_bg from "../assets/isedolsDetail/Profile_bg.png";
-import acrylic_stand from "../assets/isedolMarchandise/acrylic_stand.png";
-import marchandise_title from "../assets/isedolMarchandise/marchandise_title.png";
-import photocard from "../assets/isedolMarchandise/photocard.png";
-import poster from "../assets/isedolMarchandise/poster.png";
-import sticker from "../assets/isedolMarchandise/sticker.png";
+import acrylic_stand from "../assets/isedolMerchandise/acrylic_stand.png";
+import merchandise_title from "../assets/isedolMerchandise/merchandise_title.png";
+import photocard from "../assets/isedolMerchandise/photocard.png";
+import poster from "../assets/isedolMerchandise/poster.png";
+import sticker from "../assets/isedolMerchandise/sticker.png";
 import { useState } from "react";
-import IsedolMarchandiseDetail from "./IsedolMarchandiseDetail";
+import IsedolMerchandiseDetail from "./IsedolMerchandiseDetail";
 
-import "./IsedolMarchandise.css";
+import "./IsedolMerchandise.css";
 
-const IsedolMarchandise = () => {
+const IsedolMerchandise = () => {
   const [isProductModal, setIsProductModal] = useState(false);
   const [productType, setProductType] = useState();
 
@@ -29,15 +29,22 @@ const IsedolMarchandise = () => {
   return (
     <>
       {isProductModal ? (
-        <IsedolMarchandiseDetail type={productType} handleModal={handleModal} />
+        <IsedolMerchandiseDetail
+          type={productType}
+          handleModal={handleModal}
+        />
       ) : null}
       <img src={isedol_edge} className="edge" alt="edge" />
-      <img src={Profile_bg} className="marchandise_BG" alt="background" />
-      <div className="marchandise_title">
+      <img
+        src={Profile_bg}
+        className="merchandise_BG"
+        alt="background"
+      />
+      <div className="merchandise_title">
         <img
-          src={marchandise_title}
+          src={merchandise_title}
           alt="title"
-          className="marchandise_title_image"
+          className="merchandise_title_image"
         />
       </div>
       <div className="items_container">
@@ -83,4 +90,4 @@ const IsedolMarchandise = () => {
   );
 };
 
-export default IsedolMarchandise;
+export default IsedolMerchandise;
