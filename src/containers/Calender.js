@@ -6,7 +6,6 @@ import p1desc from "../assets/calender/1P/p1desc.png";
 import p2cont1 from "../assets/calender/2P/p2cont1.png";
 import p2cont2 from "../assets/calender/2P/p2cont2.png";
 import p2cont3 from "../assets/calender/2P/p2cont3.png";
-
 import CalendarSlider from "../components/CalendarSlider";
 
 function Calender() {

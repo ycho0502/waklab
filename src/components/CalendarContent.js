@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion/dist/framer-motion";
 function CalendarContent(data) {
   const mystyle = {
     backgroundImage: `url(${data.data.Background})`,
@@ -10,17 +10,27 @@ function CalendarContent(data) {
   };
   return (
     <div className="calenderbg3" style={mystyle}>
-      <div className="calenderTitle">
-        <img className="p3title" src={data.data.Title}></img>
-      </div>
-      <div className="p3contents">
-        <div className="p3a">
-          <img src={data.data.Front}></img>
+      <motion.div
+        initial={{ scaleX: 0 }}
+        animate={{ scaleX: 1 }}
+        exit={{ scaleX: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <div
+          className="calenderTitle"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <img className="p3title" src={data.data.Title}></img>
         </div>
-        <div className="p3b">
-          <img src={data.data.Back}></img>
+        <div className="p3contents">
+          <div className="p3a">
+            <img src={data.data.Front}></img>
+          </div>
+          <div className="p3b">
+            <img src={data.data.Back}></img>
+          </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
