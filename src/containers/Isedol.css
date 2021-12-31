@@ -8,7 +8,36 @@
   object-fit: cover;
 }
 
-.marchandise_container {
+.intro_clock {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 9000;
+  transition: all 3s ease;
+}
+
+.intro_clock_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  filter: brightness(0.4);
+  transform: translate(-50%, -50%);
+  transition: all 1s ease-in;
+}
+
+.intro_clock_img:hover {
+  filter: brightness(1.3);
+}
+
+.fadeout {
+  opacity: 0;
+}
+
+.clock_none {
+  display: none;
+}
+
+.merchandise_container {
   position: relative;
   top: 0;
   left: 0;

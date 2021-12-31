@@ -1,4 +1,4 @@
-.marchandise_BG {
+.merchandise_BG {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -16,13 +16,13 @@
   flex: 1 1 30%;
 }
 
-.marchandise_title {
+.merchandise_title {
   height: 14vh;
   padding-top: 5%;
   top: 15vh;
 }
 
-.marchandise_title_image {
+.merchandise_title_image {
   margin: auto;
   display: flex;
   position: relative;
@@ -63,7 +63,7 @@
 }
 
 .photocard:hover {
-  background-image: url("../assets/isedolMarchandise/photocard_hover.png");
+  background-image: url("../assets/isedolMerchandise/photocard_hover.png");
   background-size: 100% 100%;
 }
 
@@ -73,16 +73,16 @@
 }
 
 .acrylic:hover {
-  background-image: url("../assets/isedolMarchandise/acrylic_stand_hover.png");
+  background-image: url("../assets/isedolMerchandise/acrylic_stand_hover.png");
   background-size: 100% 100%;
 }
 
 .poster:hover {
-  background-image: url("../assets/isedolMarchandise/poster_hover.png");
+  background-image: url("../assets/isedolMerchandise/poster_hover.png");
   background-size: 100% 100%;
 }
 
 .sticker:hover {
-  background-image: url("../assets/isedolMarchandise/sticker_hover.png");
+  background-image: url("../assets/isedolMerchandise/sticker_hover.png");
   background-size: 100% 100%;
 }

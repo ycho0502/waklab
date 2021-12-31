@@ -8,37 +8,37 @@ function importAll(r) {
 
 const posterImages = importAll(
   require.context(
-    "../../assets/isedolMarchandiseDetail/Poster_detail",
+    "../../assets/isedolMerchandiseDetail/Poster_detail",
     false,
-    /\.(png|jpe?g|svg)$/
-  )
+    /\.(png|jpe?g|svg)$/,
+  ),
 );
 
 const stickerImages = importAll(
   require.context(
-    "../../assets/isedolMarchandiseDetail/Sticker_detail",
+    "../../assets/isedolMerchandiseDetail/Sticker_detail",
     false,
-    /\.(png|jpe?g|svg)$/
-  )
+    /\.(png|jpe?g|svg)$/,
+  ),
 );
 
 const photoCardImages = importAll(
   require.context(
-    "../../assets/isedolMarchandiseDetail/PhotoCard_detail",
+    "../../assets/isedolMerchandiseDetail/PhotoCard_detail",
     false,
-    /\.(png|jpe?g|svg)$/
-  )
+    /\.(png|jpe?g|svg)$/,
+  ),
 );
 
 const acrylicImages = importAll(
   require.context(
-    "../../assets/isedolMarchandiseDetail/Acrylic_detail",
+    "../../assets/isedolMerchandiseDetail/Acrylic_detail",
     false,
-    /\.(png|jpe?g|svg)$/
-  )
+    /\.(png|jpe?g|svg)$/,
+  ),
 );
 console.log(posterImages);
-export const isedolMarchandiseDetail = [
+export const isedolMerchandiseDetail = [
   {
     type: "poster",
     main: posterImages["poster_product.png"].default,

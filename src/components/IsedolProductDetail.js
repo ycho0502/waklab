@@ -18,27 +18,38 @@ export const Poster = ({ main, texture, top, bottom }) => {
       <div className="poster_left_container">
         <img src={texture} alt="gold_texture" />
         <img src={top} className="poster_top_quote" alt="top_quote" />
-        <p align="center" className="marchandise_description">
+        <p align="center" className="merchandise_description">
           이세계 아이돌의 데뷔를 기념하여 만들어진 패브릭 포스터
           <br />
-          세련된 분위기의 블랙골드 패션으로 멤버들의 매력을 끌어올렸으며
+          세련된 분위기의 블랙골드 패션으로 멤버들의 매력을
+          끌어올렸으며
           <br />
           벽에 장식하여 인테리어 소품으로 활용도 가능하다
         </p>
-        <img src={bottom} className="poster_bottom_quote" alt="bottom_quote" />
+        <img
+          src={bottom}
+          className="poster_bottom_quote"
+          alt="bottom_quote"
+        />
       </div>
       <div className="poster_right_container">
-        <img className="poster_detail_img" src={main} alt="poster_main" />
+        <img
+          className="poster_detail_img"
+          src={main}
+          alt="poster_main"
+        />
       </div>
     </div>
   );
 };
 
 export const Stricker = ({ texture, stickers, top }) => {
-  const slides = Array.from({ length: stickers.length }).map((el, index) => ({
-    content: `Slide ${index + 1}`,
-    image: stickers[index],
-  }));
+  const slides = Array.from({ length: stickers.length }).map(
+    (el, index) => ({
+      content: `Slide ${index + 1}`,
+      image: stickers[index],
+    }),
+  );
 
   return (
     <div className="sticker_container">
@@ -55,7 +66,10 @@ export const Stricker = ({ texture, stickers, top }) => {
         virtual
       >
         {slides.map((slideContent, index) => (
-          <SwiperSlide key={slideContent.content} virtualIndex={index}>
+          <SwiperSlide
+            key={slideContent.content}
+            virtualIndex={index}
+          >
             <img
               className="sticker_product"
               src={slideContent.image}
@@ -65,7 +79,10 @@ export const Stricker = ({ texture, stickers, top }) => {
         ))}
       </Swiper>
       <img className="sticker_top_quote" src={top} alt="top" />
-      <p align="center" className="marchandise_description sticker_description">
+      <p
+        align="center"
+        className="merchandise_description sticker_description"
+      >
         이세계 아이돌 멤버들의 밈과 아이덴티티를
         <br /> 귀여운 일러스트로 풀어낸 다이어리 꾸미기용 스티커입니다
       </p>
@@ -87,7 +104,7 @@ export const PhotoCard = ({
     (idx) => {
       setPickIsedol(photoCards[idx]);
     },
-    [isSelect]
+    [photoCards],
   );
 
   const handleSelectIsedol = (idx) => {
@@ -113,9 +130,17 @@ export const PhotoCard = ({
         </div>
       </div>
       <div className="photocard_right">
-        <img src={texture} className="photocard_texture" alt="texure" />
-        <img src={top} className="photocard_top_quote" alt="top_quote" />
-        <p align="center" className="marchandise_description">
+        <img
+          src={texture}
+          className="photocard_texture"
+          alt="texure"
+        />
+        <img
+          src={top}
+          className="photocard_top_quote"
+          alt="top_quote"
+        />
+        <p align="center" className="merchandise_description">
           이세계 아이돌의 데뷔곡 RE:WIND의 테마로 제작된 포토카드
           <br />
           뒷면에는 이세계 아이돌이
@@ -145,10 +170,18 @@ export const PhotoCard = ({
 export const Acrylic = ({ texture, product, top }) => {
   return (
     <div className="acrylic_container">
-      <img className="acrylic_texture" src={texture} alt="acrylic_texture" />
-      <img className="acrylic_product" src={product} alt="acrylic_product" />
+      <img
+        className="acrylic_texture"
+        src={texture}
+        alt="acrylic_texture"
+      />
+      <img
+        className="acrylic_product"
+        src={product}
+        alt="acrylic_product"
+      />
       <img className="acrylic_quote" src={top} alt="acrylic_quote" />
-      <p align="center" className="marchandise_description">
+      <p align="center" className="merchandise_description">
         각자의 퍼스널 컬러 의상을 입고 다양한 하트 포즈를 취하며
         <br />
         매력을 어필하는 멤버들의 모습이 담긴 아크릴스탠드 입니다
