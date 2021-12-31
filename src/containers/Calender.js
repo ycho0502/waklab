@@ -21,8 +21,10 @@ function Calender() {
         <section className="calenderSecond">
           <div className="calenderbg2">
             <img className="p2cont1" src={p2cont1}></img>
-            <img className="p2cont2" src={p2cont2}></img>
-            <img className="p2cont3" src={p2cont3}></img>
+            <div className="calender2Container">
+              <img className="p2cont3" src={p2cont3}></img>
+              <img className="p2cont2" src={p2cont2}></img>
+            </div>
           </div>
         </section>
         <section className="calenderThird">
