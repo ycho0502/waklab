@@ -4,6 +4,7 @@ import bgText from "../assets/back.png";
 import logo from "../assets/WAK.png";
 import calendarPic from "../assets/2019_calendar.png";
 import charterBar from "../assets/chapter_bar.png";
+import waklabvideo from "../assets/waklab.mp4";
 import bossJ from "../assets/helloj.png";
 import ImageSlider from "../components/ImageSlider";
 import { companyData } from "../components/data/companyData";
@@ -15,18 +16,15 @@ function Home() {
   return (
     <div className="home" id="home">
       <section className="showcase">
-        <video
-          src="https://cdn.videvo.net/videvo_files/video/free/2019-03/large_watermarked/181015_Extra_DanangDrone_004_preview.mp4"
-          controls={false}
+      <video
+          src={waklabvideo}
+          controls
           muted
+          autoPlay={"autoplay"}
+          preLoad="auto"
           loop
-          autoPlay
+          controlslist="nodownload"
         ></video>
-        <div className="vidText">
-          <h3>WE ARE</h3>
-          <h2>WAKLAB</h2>
-        </div>
-        <div className="overlay"></div>
       </section>
       <section className="intro" id="about">
         <img className="bgText" src={bgText} />
