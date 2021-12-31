@@ -22,14 +22,12 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/calender" element={<Calender />} />
-        <Route path="/calender" element={<Calender />} />
         <Route path="/Merchandise" element={<Merchandise />} />
         <Route path="/isedol" element={<Isedol />} />
         <Route path="/Team" element={<Team />} />
         <Route path="/" exact element={<Home />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-      <Footer />
     </Router>
   );
 }

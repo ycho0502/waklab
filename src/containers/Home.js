@@ -11,6 +11,7 @@ import { companyData } from "../components/data/companyData";
 import TeamProfile from "../components/TeamProfile";
 import { portfolioData } from "../components/data/portfolioData";
 import { newproductData } from "../components/data/newproductData";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -132,6 +133,7 @@ function Home() {
         <div className="sectionLogoTitle">2022 NEW PRODUCTS</div>
         <ImageSlider slides={newproductData} />
       </section>
+      <Footer />
     </div>
   );
 }
