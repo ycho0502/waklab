@@ -22,11 +22,14 @@ function CalendarContent(data) {
         >
           <img className="p3title" src={data.data.Title}></img>
         </div>
-        <div className="p3contents">
-          <div className="p3a">
+        <div
+          className="p3contents"
+          style={{ display: "flex", justifyContent: "center", width: "100vw" }}
+        >
+          <div className="p3a" style={{ marginRight: "13rem" }}>
             <img src={data.data.Front}></img>
           </div>
-          <div className="p3b">
+          <div className="p3b" style={{ marginLight: "13rem" }}>
             <img src={data.data.Back}></img>
           </div>
         </div>

@@ -6,17 +6,23 @@
 }
 
 .p3contents {
-  width: 60vw;
+  width: 100vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-content: center;
 }
 
 .p3contents img {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .p3b {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p3contents img {
   display: flex;
   justify-content: space-between;
 }

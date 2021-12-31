@@ -81,19 +81,3 @@
   justify-content: center;
   flex-direction: column;
 }
-
-.p3contents {
-  width: 60vw;
-  display: flex;
-  justify-content: space-around;
-}
-
-.p3contents img {
-  display: flex;
-  justify-content: space-between;
-}
-
-.p3b {
-  display: flex;
-  justify-content: space-between;
-}
