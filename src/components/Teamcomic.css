@@ -1,0 +1,51 @@
+.teamslider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px auto;
+    width: 700px;
+  }
+  
+  .angle-left {
+    background-image: url("../assets/arrow_left.png");
+    position: absolute;
+    height: 85px;
+    width: 45px;
+    top: 45%;
+    background-size: cover;
+    background-position: center center;
+    left: 7%;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .angle-right {
+    background-image: url("../assets/arrow_right.png");
+    position: absolute;
+    height: 85px;
+    width: 45px;
+    top: 45%;
+    right: 7%;
+    background-size: cover;
+    background-position: center center;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .teamslide {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+  
+  .teamslide.active {
+
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+  }
+  .teamcoimg {
+      width: 350px;
+  }
