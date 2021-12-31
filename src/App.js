@@ -8,8 +8,6 @@ import {
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./containers/Home";
-import About from "./containers/About";
-
 import Calender from "./containers/Calender";
 import Merchandise from "./containers/Merchandise";
 import Team from "./containers/Team";
@@ -23,7 +21,6 @@ function App() {
       <ScrollToTop />
       <Navbar />
       <Routes>
-        <Route path="/about" element={<About />} />
         <Route path="/calender" element={<Calender />} />
         <Route path="/calender" element={<Calender />} />
         <Route path="/Merchandise" element={<Merchandise />} />

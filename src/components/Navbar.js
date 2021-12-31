@@ -61,24 +61,13 @@ function Navbar() {
             <div className="menu_animation"></div>
           </li>
 
-          {/* ABOUT */}
-          <li className="nav-item">
-            <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
-              About
-            </Link>
-            <div className="menu_animation"></div>
-          </li>
-
           {/* PRODUCTS */}
           <li
             className="nav-item"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            <div
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
+            <div className="nav-links" onClick={closeMobileMenu}>
               Products <i className="fas fa-caret-down" />
             </div>
             {dropdown && <Dropdown />}
