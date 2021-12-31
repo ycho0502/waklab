@@ -1,0 +1,100 @@
+.calender {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.calender section {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.calenderbg1 {
+  background-image: url("../assets/calender/1P/p1background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.calenderFirst img {
+  position: relative;
+}
+
+.p1title {
+  top: 18%;
+  left: 40%;
+}
+
+.p1desc {
+  top: 22%;
+  left: 5%;
+}
+
+.calenderSecond img {
+  position: relative;
+}
+
+.p2cont1 {
+  top: -30%;
+  left: 25%;
+}
+
+.p2cont2 {
+  top: 30%;
+  right: 3%;
+}
+.p2cont3 {
+  bottom: 25%;
+  left: 25%;
+}
+
+.calenderbg2 {
+  background-image: url("../assets/calender/2P/p2background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.calenderbg3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+@media all and (min-width: 1949px) {
+  .p2cont3 {
+    top: 32%;
+    left: -50%;
+  }
+}
+
+.calenderbg3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.p3contents {
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.p3contents img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p3b {
+  display: flex;
+  justify-content: space-between;
+}
