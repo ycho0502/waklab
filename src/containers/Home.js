@@ -16,14 +16,14 @@ function Home() {
   return (
     <div className="home" id="home">
       <section className="showcase">
-      <video
+        <video
           src={waklabvideo}
           controls
           muted
           autoPlay={"autoplay"}
-          preLoad="auto"
+          preload="auto"
           loop
-          controlslist="nodownload"
+          controlsList="nodownload"
         ></video>
       </section>
       <section className="intro" id="about">
