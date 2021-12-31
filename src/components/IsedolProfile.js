@@ -6,11 +6,14 @@ const IsedolProfile = ({
   handleImageClick,
   isModalOpen,
 }) => {
-  if (!Array.isArray(isedolProfileData) || isedolProfileData.length <= 0) {
+  if (
+    !Array.isArray(isedolProfileData) ||
+    isedolProfileData.length <= 0
+  ) {
     return null;
   }
   const topline = isedolProfileData.slice(0, 3);
-  const bottumline = isedolProfileData.slice(3);
+  const bottomline = isedolProfileData.slice(3);
 
   return (
     <div className="isedol_profile">
@@ -24,8 +27,8 @@ const IsedolProfile = ({
           />
         ))}
       </div>
-      <div className="bottumLineContainer">
-        {bottumline.map((image, idx) => (
+      <div className="bottomLineContainer">
+        {bottomline.map((image, idx) => (
           <ProfileUnit
             handleImageClick={handleImageClick}
             isModalOpen={isModalOpen}
