@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from "react";
-// import { useRef } from "react/cjs/react.development";
 
 const ProfileUnit = ({ handleImageClick, image, idx, isModalOpen }) => {
   const [clicked, setClicked] = useState(false);
