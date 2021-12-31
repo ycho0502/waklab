@@ -1,10 +1,10 @@
 import React, { useState } from "react";
+import { CalenderContent } from "../components/data/calenderData";
+import CalendarContent from "./CalendarContent";
 
-import "./ImageSlider.css";
-
-const ImageSlider = ({ slides }) => {
+function CalendarSlider() {
   const [current, setCurrent] = useState(0);
-  const length = slides.length;
+  const length = 12;
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
@@ -14,25 +14,22 @@ const ImageSlider = ({ slides }) => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
-  if (!Array.isArray(slides) || slides.length <= 0) {
-    return null;
-  }
   return (
-    <section className="slider">
+    <div>
       <i className="angle-left" onClick={prevSlide}></i>
       <i className="angle-right" onClick={nextSlide}></i>
-      {slides.map((slide, index) => {
+      {CalenderContent.map((page, index) => {
         return (
           <div
-            className={index === current ? "slide active" : "slide"}
+            className={index === current ? "page active" : "page"}
             key={index}
           >
-            {index === current && <img src={slide.image} />}
+            {index === current && <CalendarContent data={page} />}
           </div>
         );
       })}
-    </section>
+    </div>
   );
-};
+}
 
-export default ImageSlider;
+export default CalendarSlider;

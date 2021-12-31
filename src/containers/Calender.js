@@ -6,19 +6,10 @@ import p1desc from "../assets/calender/1P/p1desc.png";
 import p2cont1 from "../assets/calender/2P/p2cont1.png";
 import p2cont2 from "../assets/calender/2P/p2cont2.png";
 import p2cont3 from "../assets/calender/2P/p2cont3.png";
-import p3t from "../assets/calender/3P/1t.png";
-import p3 from "../assets/calender/3P/1.png";
-import p3a from "../assets/calender/3P/1a.png";
-import p3b from "../assets/calender/3P/1b.png";
+
+import CalendarSlider from "../components/CalendarSlider";
 
 function Calender() {
-  const mystyle = {
-    backgroundImage: `url(${p3})`,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    width: "100%",
-    height: "100vh",
-  };
   return (
     <div className="calender">
       <ReactPageScroller>
@@ -36,19 +27,7 @@ function Calender() {
           </div>
         </section>
         <section className="calenderThird">
-          <div className="calenderbg3" style={mystyle}>
-            <div className="calenderTitle">
-              <img className="p3title" src={p3t}></img>
-            </div>
-            <div className="p3contents">
-              <div className="p3a">
-                <img src={p3a}></img>
-              </div>
-              <div className="p3b">
-                <img src={p3b}></img>
-              </div>
-            </div>
-          </div>
+          <CalendarSlider />
         </section>
       </ReactPageScroller>
     </div>
