@@ -6,7 +6,7 @@ import "swiper/swiper.min.css";
 import "swiper/swiper-bundle.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import "swiper/components/navigation/navigation.min.css";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import MiniIsedolButton from "./MiniIsedolButton";
 import { useCallback } from "react";
 
