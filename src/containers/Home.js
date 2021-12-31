@@ -4,29 +4,28 @@ import bgText from "../assets/back.png";
 import logo from "../assets/WAK.png";
 import calendarPic from "../assets/2019_calendar.png";
 import charterBar from "../assets/chapter_bar.png";
+import waklabvideo from "../assets/waklab.mp4";
 import bossJ from "../assets/helloj.png";
 import ImageSlider from "../components/ImageSlider";
 import { companyData } from "../components/data/companyData";
 import TeamProfile from "../components/TeamProfile";
 import { portfolioData } from "../components/data/portfolioData";
 import { newproductData } from "../components/data/newproductData";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
     <div className="home" id="home">
       <section className="showcase">
         <video
-          src="https://cdn.videvo.net/videvo_files/video/free/2019-03/large_watermarked/181015_Extra_DanangDrone_004_preview.mp4"
-          controls={false}
+          src={waklabvideo}
+          controls
           muted
+          autoPlay={"autoplay"}
+          preload="auto"
           loop
-          autoPlay
+          controlsList="nodownload"
         ></video>
-        <div className="vidText">
-          <h3>WE ARE</h3>
-          <h2>WAKLAB</h2>
-        </div>
-        <div className="overlay"></div>
       </section>
       <section className="intro" id="about">
         <img className="bgText" src={bgText} />
@@ -134,6 +133,7 @@ function Home() {
         <div className="sectionLogoTitle">2022 NEW PRODUCTS</div>
         <ImageSlider slides={newproductData} />
       </section>
+      <Footer />
     </div>
   );
 }

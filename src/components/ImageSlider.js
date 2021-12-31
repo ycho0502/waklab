@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-// import { SliderData } from "./data/SliderData";
-import ProductCard from "./ProductCard";
+
 import "./ImageSlider.css";
 
 const ImageSlider = ({ slides }) => {

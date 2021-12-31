@@ -29,7 +29,7 @@
   margin-left: 3vw;
 }
 
-.bottumLineContainer {
+.bottomLineContainer {
   position: relative;
   min-width: 900px;
   left: 133px;
@@ -45,6 +45,7 @@
   display: inline-block;
   transform: rotate(45deg);
   margin: auto;
+  font: 30px "NewYork";
   color: white;
 }
 

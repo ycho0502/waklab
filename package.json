@@ -7,12 +7,14 @@
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "framer-motion": "^5.5.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-page-scroller": "^2.2.1",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "react-tsparticles": "^1.37.6",
+    "swiper": "^6.8.4",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
