@@ -1,6 +1,5 @@
 import React, { useState, useCallback } from "react";
 import BG from "../assets/isedolsDetail/Profile_bg.png";
-
 import "./Isedol.css";
 
 import intro_clock from "../assets/isedolMain/intro_clock.png";
