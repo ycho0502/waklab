@@ -13,11 +13,15 @@ function importAll(r) {
   export const merchanSliderData = [
     {
       name: "1",
-      image: images["mc_bn1.png"].default,
+      image: images["mb1.png"].default,
     },
     {
-      name: "1",
-      image: images["mc_bn1.png"].default,
+      name: "2",
+      image: images["mb2.png"].default,
+    },
+    {
+      name: "3",
+      image: images["mb3.png"].default,
     },
   ];
   
