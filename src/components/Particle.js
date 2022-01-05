@@ -4,7 +4,7 @@ import Particles from "react-tsparticles";
 export default function Particle({ particle }) {
   let [direction, setDirection] = useState("bottom");
   useEffect(() => {
-    setDirection(particle ? -3 : 3);
+    setDirection(particle ? 3 : -3);
   }, [particle]);
   return (
     <Particles
