@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/waklab/static/css/main.b23a2bd5.chunk.css",
-    "main.js": "/waklab/static/js/main.e039d6b0.chunk.js",
-    "main.js.map": "/waklab/static/js/main.e039d6b0.chunk.js.map",
+    "main.css": "/waklab/static/css/main.1f54c542.chunk.css",
+    "main.js": "/waklab/static/js/main.055a84a3.chunk.js",
+    "main.js.map": "/waklab/static/js/main.055a84a3.chunk.js.map",
     "runtime-main.js": "/waklab/static/js/runtime-main.3191d22f.js",
     "runtime-main.js.map": "/waklab/static/js/runtime-main.3191d22f.js.map",
     "static/css/2.d6000676.chunk.css": "/waklab/static/css/2.d6000676.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.80fb58c1.chunk.js.map": "/waklab/static/js/2.80fb58c1.chunk.js.map",
     "index.html": "/waklab/index.html",
     "static/css/2.d6000676.chunk.css.map": "/waklab/static/css/2.d6000676.chunk.css.map",
-    "static/css/main.b23a2bd5.chunk.css.map": "/waklab/static/css/main.b23a2bd5.chunk.css.map",
+    "static/css/main.1f54c542.chunk.css.map": "/waklab/static/css/main.1f54c542.chunk.css.map",
     "static/js/2.80fb58c1.chunk.js.LICENSE.txt": "/waklab/static/js/2.80fb58c1.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/waklab/static/media/1.60b8a603.jpg",
     "static/media/1.png": "/waklab/static/media/1.d70a305c.png",
@@ -215,7 +215,7 @@
     "static/js/runtime-main.3191d22f.js",
     "static/css/2.d6000676.chunk.css",
     "static/js/2.80fb58c1.chunk.js",
-    "static/css/main.b23a2bd5.chunk.css",
-    "static/js/main.e039d6b0.chunk.js"
+    "static/css/main.1f54c542.chunk.css",
+    "static/js/main.055a84a3.chunk.js"
   ]
 }
