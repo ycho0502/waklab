@@ -29,6 +29,10 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 /* .home,
 .about,
 .calender,
