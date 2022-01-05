@@ -1,3 +1,7 @@
+.clothing {
+  overflow-x: hidden;
+}
+
 .modal-open {
   position: fixed;
 
