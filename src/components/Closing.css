@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+h1 {
+  font-family: adelle-condensed;
+  text-align: center;
+  font-weight: 400;
+  font-variant-caps: all-small-caps;
+  font-size: 6rem;
+  font-family: 'EliceDigitalBaeum_Bold';
+}
+h1 em {
+  font-variant-caps: normal;
+  font-size: 0.8em;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-top: 5rem;
+  margin-bottom: 0.5rem;
+  font-variant-caps: all-small-caps;
+  font-family: 'EliceDigitalBaeum_Bold';
+}
+
+h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.smcaps {
+  font-variant-caps: all-small-caps;
+}
+
+.credits {
+    
+  flex-basis: 100rem;
+  margin: 2rem 0;
+  font-size: 1.85rem;
+  line-height: 1.2;
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+}
+.credits__single {
+  display: grid;
+  grid-template-columns: 1;
+  gap: 0 2rem;
+  text-align: center;
+  
+}
+.credits__single dt {
+  font-variant-caps: all-small-caps;
+  margin-top: 1.7rem;
+  font-family: 'EliceDigitalBaeum_Bold';
+}
+.credits__single dd {
+  margin-top: 0.6rem;
+  font-family: 'EliceDigitalBaeum_Bold';
+}
+.credits__double {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 2rem;
+}
+.credits__double dt {
+  text-align: right;
+  font-variant-caps: all-small-caps;
+  margin-top: 1.7rem;
+  font-family: 'EliceDigitalBaeum_Bold';
+}
+.credits__double dd {
+  text-align: left;
+  grid-column: 2/3;
+  margin-top: 0.6rem;
+  font-family: 'EliceDigitalBaeum_Bold';
+}
+.credits__double dt + dd {
+  margin-top: 1.7rem;
+}
+.credits__inline {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.7rem;
+}
+.credits__inline li {
+  padding: 0.3rem 0.8rem;
+  font-family: 'EliceDigitalBaeum_Bold';
+}
+.credits__music {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.7rem;
+}
+.credits__music dl {
+  text-align: center;
+  padding: 0 2rem 2rem 2rem;
+  flex-basis: 30rem;
+}
+.credits__music dt {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+.credits__music dd {
+  font-size: 1.5rem;
+}
+
+footer {
+  margin: 454px auto;
+}

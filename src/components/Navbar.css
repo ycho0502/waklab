@@ -7,14 +7,19 @@
   align-items: center;
   font-size: 1.2rem;
   z-index: 99;
-  top: 0;
+
   transition: all 0.5s ease 0s;
+  border-radius: 60px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  top: 30px;
 }
 
 .navbar.active {
   height: 80px;
   position: sticky;
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: #fff;
+  box-shadow: 0 10px 30px 0 rgb(127 127 127 / 30%);
 }
 
 .navbar-logo {
@@ -37,7 +42,6 @@
 
 .nav-menu {
   display: flex;
-  /* grid-template-columns: repeat(5, auto); */
   grid-gap: 10px;
   list-style: none;
   text-align: center;
@@ -61,7 +65,7 @@
 }
 
 .navbar.active .nav-links {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .menu_animation {
@@ -76,7 +80,6 @@
 
 .nav-links:hover + .menu_animation {
   bottom: 5px;
-
   background: #18ff9f;
   transition: all 0.5s ease 0s;
 }

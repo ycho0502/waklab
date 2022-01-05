@@ -1,12 +1,6 @@
-import { useEffect, useState } from "react";
-import { useRef } from "react/cjs/react.development";
+import { useEffect, useState, useRef } from "react";
 
-const ProfileUnit = ({
-  handleImageClick,
-  image,
-  idx,
-  isModalOpen,
-}) => {
+const ProfileUnit = ({ handleImageClick, image, idx, isModalOpen }) => {
   const [clicked, setClicked] = useState(false);
   const [isShown, setIsShown] = useState(false);
   const myRef = useRef();
@@ -38,9 +32,7 @@ const ProfileUnit = ({
       ) : null}
       <img
         name={idx}
-        className={`profile_small ${image.name} ${
-          clicked ? "hide" : ""
-        }`}
+        className={`profile_small ${image.name} ${clicked ? "hide" : ""}`}
         src={image.image}
         alt={image.name}
       />

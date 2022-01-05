@@ -19,16 +19,6 @@
   opacity: 0.8;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: #778b6b;
-  mix-blend-mode: overlay;
-}
-
 .vidText {
   position: relative;
   color: white;
@@ -84,9 +74,11 @@
   font-size: 2.8vw;
   font-weight: 0;
   line-height: 2em;
+  text-align: left;
 }
 
 .intro p {
+  text-align: left;
   font-size: 1.2vw;
   font-weight: 400;
 }
@@ -156,4 +148,24 @@
 
 .newProducts img {
   max-height: 100vh;
+}
+
+/* 일시정지, 재생 버튼 */
+video::-webkit-media-controls-play-button {
+  display: none !important;
+}
+
+/* 재생 슬라이드..? */
+video::-webkit-media-controls-timeline {
+  display: none !important;
+}
+
+/* 현재 진행 시간 */
+video::-webkit-media-controls-current-time-display {
+  display: none !important;
+}
+
+/* 전체 시간 */
+video::-webkit-media-controls-time-remaining-display {
+  display: none !important;
 }

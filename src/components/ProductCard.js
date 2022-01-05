@@ -1,27 +1,51 @@
-import React, { useState } from "react";
+import React, { Component } from 'react';
 import "./ProductCard.css";
+import Modal from "./ProductModal";
 
-function ProductCard(img) {
-  const [image, setImage] = useState(img);
 
-  return (
-    <div className="wrapper">
-      <div className="card">
-        <img src={image.img}></img>
-        <div className="card_content">
-          <div className="card_row">
-            <div className="card_details">
-              <span>Hoodies</span>
-              <p>Hoods</p>
+class Product extends Component {
+
+  state = {
+    showModal: 0
+  };
+
+  getModal = value => {
+    this.setState({ showModal: value });
+
+    
+  };
+
+  hideModal = value => {
+    setTimeout(() => {
+      this.setState({ showModal: 0 });
+    }, 200) 
+  };
+
+  render() {
+    
+    return (
+      <div className="container">
+        <h2 className={this.props.className}>{this.props.title}</h2>
+        <div className="sct">
+        {this.props.data.filter(category => category.caid == this.props.caid).map((data, key) => (
+          <div key={key} className="products">
+            <div onClick={() => this.getModal(data.id)}>
+            <img src={data.image} className="productsimg" />
             </div>
+            <Modal
+              show={this.state.showModal === data.id}
+              onHide={() => this.hideModal(data.id)}
+              content={data.content}
+              modalclass="modal-open"
+            />
           </div>
-          <div className="card_buttons">
-            <button>Details</button>
-          </div>
+        ))}
+       
         </div>
       </div>
-    </div>
-  );
+      
+    );
+  }
 }
 
-export default ProductCard;
+export default Product;
