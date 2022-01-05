@@ -80,6 +80,16 @@ const IsedolMainComp = ({ isStart }) => {
     <>
       <ReactPageScroller>
         <section>
+          {isModalOpen ? (
+            <IsedolDetail
+              isModalOpen={isModalOpen}
+              chooseIsedol={chooseIsedol}
+              isedol={isedolsDetailData[chooseIsedol.currentIdol]}
+              handleModalClose={handleModalClose}
+              top={position.top}
+              left={position.left}
+            />
+          ) : null}
           <Particle particle={particle} />
           <img className="edge" src={isedol_edge} alt="edge" />
           <div className="title">
@@ -110,16 +120,9 @@ const IsedolMainComp = ({ isStart }) => {
           <IsedolMerchandise />
         </section>
       </ReactPageScroller>
-      {isModalOpen ? (
-        <IsedolDetail
-          isModalOpen={isModalOpen}
-          chooseIsedol={chooseIsedol}
-          isedol={isedolsDetailData[chooseIsedol.currentIdol]}
-          handleModalClose={handleModalClose}
-          top={position.top}
-          left={position.left}
-        />
-      ) : null}
+      <div className="hidden_created">
+        <span>ISEDOL Paged by 한국김치맛있다</span>
+      </div>
     </>
   );
 };
