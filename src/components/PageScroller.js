@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useCallback } from "react/cjs/react.development";
+import { useCallback } from "react";
 
 import "./scrollstyle.css";
 
@@ -38,7 +38,7 @@ const PageScroller = ({ children }) => {
         }, 900);
       }
     },
-    [isScrolling],
+    [isScrolling]
   );
 
   useEffect(() => {
