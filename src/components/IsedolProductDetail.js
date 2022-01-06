@@ -44,13 +44,6 @@ export const Poster = ({ main, texture, top, bottom }) => {
 };
 
 export const Stricker = ({ texture, stickers, top }) => {
-  const slides = Array.from({ length: stickers.length }).map(
-    (el, index) => ({
-      content: `Slide ${index + 1}`,
-      image: stickers[index],
-    }),
-  );
-
   return (
     <div className="sticker_container">
       <div className="sticker_title">
@@ -65,14 +58,14 @@ export const Stricker = ({ texture, stickers, top }) => {
         loop={false}
         virtual
       >
-        {slides.map((slideContent, index) => (
+        {stickers.map((slideContent, index) => (
           <SwiperSlide
-            key={slideContent.content}
+            key={`Slide ${index + 1}`}
             virtualIndex={index}
           >
             <img
               className="sticker_product"
-              src={slideContent.image}
+              src={slideContent}
               alt="slide_image"
             />
           </SwiperSlide>

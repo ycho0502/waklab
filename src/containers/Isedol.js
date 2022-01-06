@@ -15,7 +15,7 @@ function Isedol() {
     setTimeout(() => {
       setFadeOut(true);
     }, 3000);
-  });
+  }, []);
 
   return (
     <div className="isedol">
@@ -30,7 +30,11 @@ function Isedol() {
           src={intro_clock}
           alt="intro"
         />
-        <img className={`intro_background`} src={BG} />
+        <img
+          className={`intro_background`}
+          src={BG}
+          alt="background"
+        />
       </div>
       <IsedolMainComp isStart={isStart} />
     </div>
