@@ -1,8 +1,4 @@
-import {
-  useCallback,
-  useEffect,
-  useState,
-} from "react/cjs/react.development";
+import { useCallback, useEffect, useState } from "react";
 import { isedolsDetailData } from "../components/data/isedolsDetailData";
 import IsedolDetail from "../components/IsedolDetail";
 import Re_wind_inst from "../assets/RE_WIND_Inst.mp3";
@@ -90,11 +86,7 @@ const IsedolMainComp = ({ isStart }) => {
           <Particle particle={particle} />
           <img className="edge" src={isedol_edge} alt="edge" />
           <div className="title">
-            <img
-              className="title_img"
-              src={isedol_title}
-              alt="title"
-            />
+            <img className="title_img" src={isedol_title} alt="title" />
           </div>
           <div className="isedolMain_bg_container">
             <img className="isedolMain_bg" src={Bg_main} alt="main" />
