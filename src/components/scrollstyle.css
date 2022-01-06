@@ -1,0 +1,16 @@
+.scroll_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.page_container {
+  outline: none;
+  height: 100vh;
+  width: 100%;
+  transition: all 0.9s ease;
+  transform: translate3d(0px, var(--YPosition), 0px);
+}

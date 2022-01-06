@@ -1,5 +1,4 @@
 import React from "react";
-import ReactPageScroller from "react-page-scroller";
 import "./Calender.css";
 import p1title from "../assets/calender/1P/p1title.png";
 import p1desc from "../assets/calender/1P/p1desc.png";
@@ -7,11 +6,12 @@ import p2cont1 from "../assets/calender/2P/p2cont1.png";
 import p2cont2 from "../assets/calender/2P/p2cont2.png";
 import p2cont3 from "../assets/calender/2P/p2cont3.png";
 import CalendarSlider from "../components/CalendarSlider";
+import PageScroller from "../components/PageScroller";
 
 function Calender() {
   return (
     <div className="calender">
-      <ReactPageScroller>
+      <PageScroller>
         <section className="calenderFirst">
           <div className="calenderbg1">
             <img className="p1title" src={p1title}></img>
@@ -27,10 +27,8 @@ function Calender() {
             </div>
           </div>
         </section>
-        <section className="calenderThird">
-          <CalendarSlider />
-        </section>
-      </ReactPageScroller>
+        <CalendarSlider />
+      </PageScroller>
     </div>
   );
 }
