@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState } from "react";
-import ReactPageScroller from "react-page-scroller";
 import { isedolsDetailData } from "../components/data/isedolsDetailData";
 import IsedolDetail from "../components/IsedolDetail";
 import Re_wind_inst from "../assets/RE_WIND_Inst.mp3";
@@ -11,6 +10,8 @@ import Bg_main from "../assets/isedolMain/Bg_main.png";
 import isedol_edge from "../assets/isedolMain/isedol_edge.png";
 import isedol_title from "../assets/isedolMain/isedol_title.png";
 import arrow from "../assets/isedolMain/gold_arrow.png";
+import PageScroller from "./PageScroller";
+import { Link } from "react-router-dom";
 
 const IsedolMainComp = ({ isStart }) => {
   const [audio] = useState(new Audio(Re_wind_inst));
@@ -28,10 +29,6 @@ const IsedolMainComp = ({ isStart }) => {
     top: "50%",
     left: "50%",
   });
-
-  const handleReverse = () => {
-    setParticle(!particle);
-  };
 
   const handleIdolClick = (idx, elePosition) => {
     console.log(elePosition, idx);
@@ -74,8 +71,18 @@ const IsedolMainComp = ({ isStart }) => {
 
   return (
     <>
-      <ReactPageScroller>
-        <section>
+      <PageScroller>
+        <section className="isedolMain_container">
+          {isModalOpen ? (
+            <IsedolDetail
+              isModalOpen={isModalOpen}
+              chooseIsedol={chooseIsedol}
+              isedol={isedolsDetailData[chooseIsedol.currentIdol]}
+              handleModalClose={handleModalClose}
+              top={position.top}
+              left={position.left}
+            />
+          ) : null}
           <Particle particle={particle} />
           <img className="edge" src={isedol_edge} alt="edge" />
           <div className="title">
@@ -90,28 +97,18 @@ const IsedolMainComp = ({ isStart }) => {
             />
           </div>
           <div className="arrow">
-            <img
-              className="arrow_image"
-              src={arrow}
-              alt="arrow"
-              onClick={handleReverse}
-            />
+            <Link to="/">
+              <img className="arrow_image" src={arrow} alt="arrow" />
+            </Link>
           </div>
         </section>
         <section className="merchandise_container">
           <IsedolMerchandise />
         </section>
-      </ReactPageScroller>
-      {isModalOpen ? (
-        <IsedolDetail
-          isModalOpen={isModalOpen}
-          chooseIsedol={chooseIsedol}
-          isedol={isedolsDetailData[chooseIsedol.currentIdol]}
-          handleModalClose={handleModalClose}
-          top={position.top}
-          left={position.left}
-        />
-      ) : null}
+      </PageScroller>
+      <div className="hidden_created">
+        <span>ISEDOL Paged by 한국김치맛있다</span>
+      </div>
     </>
   );
 };

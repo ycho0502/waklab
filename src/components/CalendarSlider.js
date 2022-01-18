@@ -15,7 +15,7 @@ function CalendarSlider() {
   };
 
   return (
-    <div>
+    <section className="calenderThird">
       <i className="angle-left" onClick={prevSlide}></i>
       <i className="angle-right" onClick={nextSlide}></i>
       {CalenderContent.map((page, index) => {
@@ -30,7 +30,7 @@ function CalendarSlider() {
           </AnimatePresence>
         );
       })}
-    </div>
+    </section>
   );
 }
 

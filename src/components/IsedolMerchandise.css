@@ -86,3 +86,18 @@
   background-image: url("../assets/isedolMerchandise/sticker_hover.png");
   background-size: 100% 100%;
 }
+
+.hidden_created {
+  position: absolute;
+  z-index: 9999;
+  bottom: 8vh;
+  right: 10vw;
+  color: white;
+  opacity: 0;
+  transition: all 1s ease;
+  font-size: small;
+}
+
+.hidden_created:hover {
+  opacity: 1;
+}

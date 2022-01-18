@@ -1,88 +1,93 @@
-.modal-open {
-    position: fixed;
- 
-    right: 20%;
-    bottom: 0%;
-    left: 20%;
-    padding: 0 10px;
-    box-shadow: 0 10px 30px 0 rgba(127, 127, 127, 0.3);
-    background: rgb(255, 255, 255);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    z-index: 99;
-    overflow: hidden;
-    overflow-y: auto;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-    animation: slideup 0.2s;
-    -moz-animation: slideup 0.2s;
-    -webkit-animation: slideup 0.2s;
-    -o-animation: slideup 0.2s;
-    animation-fill-mode: forwards;
- 
-  }
-  .modal-close {
-    position: fixed;
- 
-    right: 20%;
-    bottom: 0%;
-    left: 20%;
-    padding: 0 10px;
-    box-shadow: 0 10px 30px 0 rgba(127, 127, 127, 0.3);
-    background: rgb(255, 255, 255);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    z-index: 99;
-    overflow: hidden;
-    overflow-y: auto;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-    animation: slidedown 0.2s;
-    -moz-animation: slidedown 0.2s;
-    -webkit-animation: slidedown 0.2s;
-    -o-animation: slidedown 0.2s;
-    animation-fill-mode: forwards;
- 
-  }
-  @keyframes slideup {
-    from {
-        top: 100%;
-    }
-    to {
-      top: 15%;
-    }
+.clothing {
+  overflow-x: hidden;
 }
-  @-webkit-keyframes slideup { /* Safari and Chrome */
-    from {
-      top: 100%;
-    }
-    to {
-      top: 15%;
-    }
+
+.modal-open {
+  position: fixed;
+
+  right: 20%;
+  bottom: 0%;
+  left: 20%;
+  padding: 0 10px;
+  box-shadow: 0 10px 30px 0 rgba(127, 127, 127, 0.3);
+  background: rgb(255, 255, 255);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  z-index: 99;
+  overflow: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  animation: slideup 0.2s;
+  -moz-animation: slideup 0.2s;
+  -webkit-animation: slideup 0.2s;
+  -o-animation: slideup 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.modal-close {
+  position: fixed;
+
+  right: 20%;
+  bottom: 0%;
+  left: 20%;
+  padding: 0 10px;
+  box-shadow: 0 10px 30px 0 rgba(127, 127, 127, 0.3);
+  background: rgb(255, 255, 255);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  z-index: 99;
+  overflow: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  animation: slidedown 0.2s;
+  -moz-animation: slidedown 0.2s;
+  -webkit-animation: slidedown 0.2s;
+  -o-animation: slidedown 0.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes slideup {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 15%;
+  }
+}
+@-webkit-keyframes slideup {
+  /* Safari and Chrome */
+  from {
+    top: 100%;
+  }
+  to {
+    top: 15%;
+  }
 }
 @keyframes slidedown {
   from {
-      top: 15%;
+    top: 15%;
   }
   to {
     top: 100%;
   }
 }
-@-webkit-keyframes slidedown { /* Safari and Chrome */
+@-webkit-keyframes slidedown {
+  /* Safari and Chrome */
   from {
     top: 15%;
-}
-to {
-  top: 100%;
-}
+  }
+  to {
+    top: 100%;
+  }
 }
 
 .modal-open::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera*/
-  }
+  display: none; /* Chrome, Safari, Opera*/
+}
 .modal-close::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera*/
-  }
+  display: none; /* Chrome, Safari, Opera*/
+}
 .modalclose {
   font-size: 25px;
   font-weight: 400;
@@ -93,12 +98,10 @@ to {
   line-height: 40px;
   position: sticky;
   background: #fff;
-
 }
 
-.merchamodal img{
+.merchamodal img {
   width: 100%;
   display: block;
   margin: 0 auto;
-
 }
