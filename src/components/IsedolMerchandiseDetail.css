@@ -138,7 +138,7 @@
   border-radius: 5px;
   z-index: 1400;
   transform: scale(0.5);
-  transition: 0.5s;
+  transition: transform 0.5s ease;
   filter: brightness(50%);
 }
 
@@ -147,10 +147,6 @@
   z-index: 1402;
   transform: scale(0.7);
   filter: brightness(80%);
-}
-
-.swiper-slide-prev:before {
-  left: 50px;
 }
 
 .swiper-slide-active {
