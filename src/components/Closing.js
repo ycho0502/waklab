@@ -30,6 +30,8 @@ class Closing extends Component {
     <dd>왁툴루</dd>
     <dt>라푼젤</dt>
     <dd>은빈</dd>
+    <dt>카구야 공주 이야기</dt>
+    <dd>Hellsogood</dd>
     <dt>알라딘</dt>
     <dd>낑깡맛</dd>
     <dt>피터팬</dt>
